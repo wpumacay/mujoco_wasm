@@ -1,0 +1,977 @@
+<mujoco model="kitchenV0">
+  <compiler autolimits="true" boundmass="0.01" angle="radian"/>
+  <default>
+    <default class="default">
+      <default class="visual">
+        <geom contype="0" conaffinity="0" group="0"/>
+      </default>
+      <default class="structural">
+        <geom contype="8" conaffinity="7" group="4" friction="0.90000000000000002 0.90000000000000002 0.001" solref="0.025000000000000001 1" solimp="0.998 0.998 0.001"/>
+      </default>
+      <default class="dynamic">
+        <geom contype="1" conaffinity="15" group="4" friction="0.90000000000000002 0.90000000000000002 0.001" solref="0.025000000000000001 1" solimp="0.998 0.998 0.001"/>
+      </default>
+    </default>
+  </default>
+  <asset>
+    <texture name="LightWoodCounters" type="2d" file="assets/ThorAssets/Textures/LightWoodCounters.png"/>
+    <material name="LightWoodCounters3" class="default" texture="LightWoodCounters" rgba="0.69811319999999999 0.33936349999999998 0.1350124 1"/>
+    <mesh name="room|2" class="default" file="assets/House/train_34_assets/room|2.obj" scale="-1 1 1"/>
+    <material name="PureWhite" class="default" texture="whitefabric" rgba="1 1 1 1"/>
+    <texture name="whitefabric" type="2d" file="assets/ThorAssets/Textures/Fabric2_AlbedoTransparency_resized.png"/>
+    <material name="KitchenTile" class="default" texture="kitchenTiles"/>
+    <texture name="kitchenTiles" type="2d" file="assets/ThorAssets/Textures/HexTiles_resized.png"/>
+    <mesh name="wall|2|0.00|4.96|4.96|4.96" class="default" file="assets/House/train_34_assets/wall|2|0.00|4.96|4.96|4.96.obj" scale="-1 1 1"/>
+    <mesh name="wall|2|4.96|0.00|4.96|4.96" class="default" file="assets/House/train_34_assets/wall|2|4.96|0.00|4.96|4.96.obj" scale="-1 1 1"/>
+    <mesh name="wall|2|0.00|0.00|4.96|0.00" class="default" file="assets/House/train_34_assets/wall|2|0.00|0.00|4.96|0.00.obj" scale="-1 1 1"/>
+    <mesh name="wall|2|0.00|0.00|0.00|4.96" class="default" file="assets/House/train_34_assets/wall|2|0.00|0.00|0.00|4.96.obj" scale="-1 1 1"/>
+    <texture name="bathroomTilesTan2" type="2d" file="assets/ThorAssets/Textures/bathroomTilesTan2.png"/>
+    <material name="bathroomTilesTan6" class="default" texture="bathroomTilesTan2" rgba="1 1 1 1"/>
+    <mesh name="wall|exterior|0.00|4.96|4.96|4.96" class="default" file="assets/House/train_34_assets/wall|exterior|0.00|4.96|4.96|4.96.obj" scale="-1 1 1"/>
+    <mesh name="wall|exterior|0.00|0.00|4.96|0.00" class="default" file="assets/House/train_34_assets/wall|exterior|0.00|0.00|4.96|0.00.obj" scale="-1 1 1"/>
+    <mesh name="wall|exterior|4.96|0.00|4.96|4.96" class="default" file="assets/House/train_34_assets/wall|exterior|4.96|0.00|4.96|4.96.obj" scale="-1 1 1"/>
+    <mesh name="wall|exterior|0.00|0.00|0.00|4.96" class="default" file="assets/House/train_34_assets/wall|exterior|0.00|0.00|0.00|4.96.obj" scale="-1 1 1"/>
+    <mesh name="wall|2|4.96|0.00|4.96|4.96_collider0" class="default" file="assets/House/train_34_assets/wall|2|4.96|0.00|4.96|4.96_collider0.obj" scale="-1 1 1"/>
+    <mesh name="wall|2|4.96|0.00|4.96|4.96_collider1" class="default" file="assets/House/train_34_assets/wall|2|4.96|0.00|4.96|4.96_collider1.obj" scale="-1 1 1"/>
+    <mesh name="wall|2|4.96|0.00|4.96|4.96_collider2" class="default" file="assets/House/train_34_assets/wall|2|4.96|0.00|4.96|4.96_collider2.obj" scale="-1 1 1"/>
+    <mesh name="wall|exterior|4.96|0.00|4.96|4.96_collider0" class="default" file="assets/House/train_34_assets/wall|exterior|4.96|0.00|4.96|4.96_collider0.obj" scale="-1 1 1"/>
+    <mesh name="wall|exterior|4.96|0.00|4.96|4.96_collider1" class="default" file="assets/House/train_34_assets/wall|exterior|4.96|0.00|4.96|4.96_collider1.obj" scale="-1 1 1"/>
+    <mesh name="wall|exterior|4.96|0.00|4.96|4.96_collider2" class="default" file="assets/House/train_34_assets/wall|exterior|4.96|0.00|4.96|4.96_collider2.obj" scale="-1 1 1"/>
+    <material name="BlackPlastic" class="default" rgba="0.19852939999999999 0.19852939999999999 0.19852939999999999 1"/>
+    <material name="LightWoodCounters2" class="default" texture="LightWoodCounters" rgba="0.76415100000000002 0.5173546 0.2991723 1"/>
+    <texture name="TexturesCom_WoodFine0050_1_seamless_S" type="2d" file="assets/ThorAssets/Textures/TexturesCom_WoodFine0050_1_seamless_S.png"/>
+    <material name="TexturesCom_WoodFine0050_1_seamless_S_rich" class="default" texture="TexturesCom_WoodFine0050_1_seamless_S" rgba="0.52941179999999999 0.30752600000000002 0.30752600000000002 1"/>
+    <mesh name="Doorway_Double_7_mesh_4_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_4_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_4_0_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_4_0_collision_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_4_0_collision_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_4_0_collision_1.obj"/>
+    <mesh name="Doorway_Double_7_mesh_4_0_collision_2" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_4_0_collision_2.obj"/>
+    <mesh name="Doorway_Double_7_mesh_0_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_0_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_0_0_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_0_0_collision_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_0_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_0_1.obj"/>
+    <mesh name="Doorway_Double_7_mesh_0_1_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_0_1_collision_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_2_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_2_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_2_0_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_2_0_collision_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_2_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_2_1.obj"/>
+    <mesh name="Doorway_Double_7_mesh_2_1_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_2_1_collision_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_1_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_1_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_1_0_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_1_0_collision_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_1_0_collision_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_1_0_collision_1.obj"/>
+    <mesh name="Doorway_Double_7_mesh_1_0_collision_2" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_1_0_collision_2.obj"/>
+    <mesh name="Doorway_Double_7_mesh_1_0_collision_3" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_1_0_collision_3.obj"/>
+    <mesh name="Doorway_Double_7_mesh_1_0_collision_4" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_1_0_collision_4.obj"/>
+    <mesh name="Doorway_Double_7_mesh_3_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_3_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_3_0_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_3_0_collision_0.obj"/>
+    <mesh name="Doorway_Double_7_mesh_3_0_collision_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_3_0_collision_1.obj"/>
+    <mesh name="Doorway_Double_7_mesh_3_0_collision_2" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_3_0_collision_2.obj"/>
+    <mesh name="Doorway_Double_7_mesh_3_0_collision_3" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_3_0_collision_3.obj"/>
+    <mesh name="Doorway_Double_7_mesh_3_0_collision_4" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Doorways/Prefabs/Doorway_Double_7/Doorway_Double_7_mesh_3_0_collision_4.obj"/>
+    <material name="Glass_White_Mat" class="default" rgba="1 1 1 0.5"/>
+    <material name="LightWoodCabinets" class="default" texture="LightWoodCounters" rgba="0.74528300000000003 0.46580189999999999 0.18632080000000001 1"/>
+    <material name="WhitePlastic" class="default" rgba="1 1 1 1"/>
+    <mesh name="Window_Slider_48x36_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_0.obj"/>
+    <mesh name="Window_Slider_48x36_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_1.obj"/>
+    <mesh name="Window_Slider_48x36_2" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_2.obj"/>
+    <mesh name="Window_Slider_48x36_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_0.obj"/>
+    <mesh name="Window_Slider_48x36_collision_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_1.obj"/>
+    <mesh name="Window_Slider_48x36_collision_2" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_2.obj"/>
+    <mesh name="Window_Slider_48x36_collision_3" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_3.obj"/>
+    <mesh name="Window_Slider_48x36_collision_4" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_4.obj"/>
+    <mesh name="Window_Slider_48x36_collision_5" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_5.obj"/>
+    <mesh name="Window_Slider_48x36_collision_6" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_6.obj"/>
+    <mesh name="Window_Slider_48x36_collision_7" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_7.obj"/>
+    <mesh name="Window_Slider_48x36_collision_8" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_8.obj"/>
+    <mesh name="Window_Slider_48x36_collision_9" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_9.obj"/>
+    <mesh name="Window_Slider_48x36_collision_10" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_10.obj"/>
+    <mesh name="Window_Slider_48x36_collision_11" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_11.obj"/>
+    <mesh name="Window_Slider_48x36_collision_12" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_12.obj"/>
+    <mesh name="Window_Slider_48x36_collision_13" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_13.obj"/>
+    <mesh name="Window_Slider_48x36_collision_14" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_14.obj"/>
+    <mesh name="Window_Slider_48x36_collision_15" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_15.obj"/>
+    <mesh name="Window_Slider_48x36_collision_16" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Windows/Prefabs/Window_Slider_48x36/Window_Slider_48x36_collision_16.obj"/>
+    <texture name="DarkWood2" type="2d" file="assets/ThorAssets/Textures/DarkWood2.png"/>
+    <material name="DarkWood2" class="default" texture="DarkWood2" rgba="1 1 1 1"/>
+    <texture name="marbleBase2" type="2d" file="assets/ThorAssets/Textures/marbleBase2.png"/>
+    <material name="marbleBase2" class="default" texture="marbleBase2" rgba="1 1 1 1"/>
+
+    <mesh name="Countertop_L_10x6_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Countertops/Prefabs/Countertop_L_10x6/Countertop_L_10x6_0.obj"/>
+    <mesh name="Countertop_L_10x6_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Countertops/Prefabs/Countertop_L_10x6/Countertop_L_10x6_1.obj"/>
+    <mesh name="Countertop_L_10x6_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Countertops/Prefabs/Countertop_L_10x6/Countertop_L_10x6_collision_0.obj"/>
+    <mesh name="Countertop_L_10x6_collision_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Countertops/Prefabs/Countertop_L_10x6/Countertop_L_10x6_collision_1.obj"/>
+  
+
+    <material name="Toaster_Coils_Off_Mat" class="default" rgba="0.1603774 0.1603774 0.1603774 1"/>
+    <texture name="Toaster_Decal_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Toaster_Decal_AlbedoTransparency.png"/>
+    <material name="Toaster_Decal_Mat" class="default" texture="Toaster_Decal_AlbedoTransparency" rgba="1 1 1 1"/>
+    <material name="Toaster_Interior_Mat" class="default" rgba="0 0 0 1"/>
+    <material name="Toaster_Metal_Mat" class="default" texture="HammeredMetal_AlbedoTransparency" rgba="0.33823530000000002 0.3208261 0.3208261 1"/>
+    <texture name="MetalBumpy_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/MetalBumpy_AlbedoTransparency.png"/>
+    <material name="Toaster_Primary2_Mat" class="default" texture="MetalBumpy_AlbedoTransparency" rgba="0.53525080000000003 0.66907289999999997 0.73529409999999995 1"/>
+    <mesh name="Toaster_24_0" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_0.obj"/>
+    <mesh name="Toaster_24_1" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_1.obj"/>
+    <mesh name="Toaster_24_2" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_2.obj"/>
+    <mesh name="Toaster_24_3" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_3.obj"/>
+    <mesh name="Toaster_24_4" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_4.obj"/>
+    <mesh name="Toaster_24_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_0.obj"/>
+    <mesh name="Toaster_24_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_1.obj"/>
+    <mesh name="Toaster_24_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_2.obj"/>
+    <mesh name="Toaster_24_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_3.obj"/>
+    <mesh name="Toaster_24_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_4.obj"/>
+    <mesh name="Toaster_24_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_5.obj"/>
+    <mesh name="Toaster_24_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_6.obj"/>
+    <mesh name="Toaster_24_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_7.obj"/>
+    <mesh name="Toaster_24_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_8.obj"/>
+    <mesh name="Toaster_24_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_9.obj"/>
+    <mesh name="Toaster_24_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_10.obj"/>
+    <mesh name="Toaster_24_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_11.obj"/>
+    <mesh name="Toaster_24_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_12.obj"/>
+    <mesh name="Toaster_24_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_13.obj"/>
+    <mesh name="Toaster_24_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_14.obj"/>
+    <mesh name="Toaster_24_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_15.obj"/>
+    <mesh name="Toaster_24_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_16.obj"/>
+    <mesh name="Toaster_24_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_17.obj"/>
+    <mesh name="Toaster_24_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_18.obj"/>
+    <mesh name="Toaster_24_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_19.obj"/>
+    <mesh name="Toaster_24_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_20.obj"/>
+    <mesh name="Toaster_24_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_21.obj"/>
+    <mesh name="Toaster_24_collision_22" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_22.obj"/>
+    <mesh name="Toaster_24_collision_23" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_23.obj"/>
+    <mesh name="Toaster_24_collision_24" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_24.obj"/>
+    <mesh name="Toaster_24_collision_25" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_25.obj"/>
+    <mesh name="Toaster_24_collision_26" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_26.obj"/>
+    <mesh name="Toaster_24_collision_27" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_27.obj"/>
+    <mesh name="Toaster_24_collision_28" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_28.obj"/>
+    <mesh name="Toaster_24_collision_29" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_29.obj"/>
+    <texture name="SprayBottle1_DefaultMaterial_AlbedoTransparency 7" type="2d" file="assets/ThorAssets/Textures/SprayBottle1_DefaultMaterial_AlbedoTransparency 7.png"/>
+    <material name="SprayBottle1_varH" class="default" texture="SprayBottle1_DefaultMaterial_AlbedoTransparency 7" rgba="1 1 1 1"/>
+    <mesh name="Spray_Bottle_8" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8.obj"/>
+    <mesh name="Spray_Bottle_8_collision_0" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_0.obj"/>
+    <mesh name="Spray_Bottle_8_collision_1" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_1.obj"/>
+    <mesh name="Spray_Bottle_8_collision_2" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_2.obj"/>
+    <mesh name="Spray_Bottle_8_collision_3" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_3.obj"/>
+    <mesh name="Spray_Bottle_8_collision_4" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_4.obj"/>
+    <mesh name="Spray_Bottle_8_collision_5" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_5.obj"/>
+    <material name="HammeredMetal_AlbedoTransparency" class="default" texture="HammeredMetal_AlbedoTransparency" rgba="1 1 1 1"/>
+    <material name="Material.003" class="default" rgba="0.098505019999999999 0.098505019999999999 0.098505019999999999 1"/>
+    <mesh name="Spatula_1_0" class="default" file="assets/ThorAssets/Kitchen Objects/Spatula/Prefabs/Spatula_1/Spatula_1_0.obj"/>
+    <mesh name="Spatula_1_1" class="default" file="assets/ThorAssets/Kitchen Objects/Spatula/Prefabs/Spatula_1/Spatula_1_1.obj"/>
+    <mesh name="Spatula_1_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Spatula/Prefabs/Spatula_1/Spatula_1_collision_0.obj"/>
+    <mesh name="Spatula_1_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Spatula/Prefabs/Spatula_1/Spatula_1_collision_1.obj"/>
+    <material name="Potato3_Mat4" class="default" texture="Potato3_AlbedoTransparency" rgba="0.77941179999999999 0.75846409999999997 0.47567039999999999 1"/>
+    <mesh name="Potato_29" class="default" file="assets/ThorAssets/Kitchen Objects/Potato/Prefabs/Potato_29/Potato_29.obj"/>
+    <mesh name="Potato_29_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Potato/Prefabs/Potato_29/Potato_29_collision_0.obj"/>
+    <texture name="Potato1_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Potato1_AlbedoTransparency.png"/>
+    <material name="Potato1_Mat3" class="default" texture="Potato1_AlbedoTransparency" rgba="0.86029409999999995 0.84703200000000001 0.37954149999999998 1"/>
+    <texture name="Tomato2_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Tomato2_AlbedoTransparency.png"/>
+    <material name="Tomato2_Mat3" class="default" texture="Tomato2_AlbedoTransparency" rgba="1 0.63970590000000005 0.51600000000000001 1"/>
+    <mesh name="Tomato_19" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19.obj"/>
+    <mesh name="Tomato_19_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_0.obj"/>
+    <mesh name="Tomato_19_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_1.obj"/>
+    <mesh name="Tomato_19_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_2.obj"/>
+    <mesh name="Tomato_19_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_3.obj"/>
+    <mesh name="Tomato_19_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_4.obj"/>
+    <mesh name="Tomato_19_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_5.obj"/>
+    <mesh name="Tomato_19_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_6.obj"/>
+    <mesh name="Tomato_19_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_7.obj"/>
+    <texture name="RoboTHOR_Cup_Primary_AI2_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/RoboTHOR_Cup_Primary_AI2_AlbedoTransparency.png"/>
+    <material name="RoboTHOR_Cup_Primary_AI2_Mat" class="default" texture="RoboTHOR_Cup_Primary_AI2_AlbedoTransparency" rgba="1 1 1 1"/>
+    <mesh name="RoboTHOR_cup_ai2_v" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_0" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_0.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_1" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_1.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_2" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_2.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_3" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_3.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_4" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_4.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_5" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_5.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_6" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_6.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_7" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_7.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_8" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_8.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_9" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_9.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_10" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_10.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_11" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_11.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_12" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_12.obj"/>
+    <texture name="SpongeGreenYellow" type="2d" file="assets/ThorAssets/Textures/SpongeGreenYellow.png"/>
+    <material name="SpongeGreenYellow" class="default" texture="SpongeGreenYellow" rgba="1 1 1 1"/>
+    <mesh name="Dish_Sponge_1" class="default" file="assets/ThorAssets/Kitchen Objects/DishSponge/Prefabs/Dish_Sponge_1/Dish_Sponge_1.obj"/>
+    <mesh name="Dish_Sponge_1_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/DishSponge/Prefabs/Dish_Sponge_1/Dish_Sponge_1_collision_0.obj"/>
+    <mesh name="Spoon_1" class="default" file="assets/ThorAssets/Kitchen Objects/Spoon/Prefabs/Spoon_1/Spoon_1.obj"/>
+    <mesh name="Spoon_1_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Spoon/Prefabs/Spoon_1/Spoon_1_collision_0.obj"/>
+    <mesh name="Spoon_1_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Spoon/Prefabs/Spoon_1/Spoon_1_collision_1.obj"/>
+    <mesh name="Spoon_1_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Spoon/Prefabs/Spoon_1/Spoon_1_collision_2.obj"/>
+    <mesh name="Spoon_1_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Spoon/Prefabs/Spoon_1/Spoon_1_collision_3.obj"/>
+    <mesh name="Spoon_1_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Spoon/Prefabs/Spoon_1/Spoon_1_collision_4.obj"/>
+    <mesh name="Spoon_1_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Spoon/Prefabs/Spoon_1/Spoon_1_collision_5.obj"/>
+    <mesh name="Spoon_1_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Spoon/Prefabs/Spoon_1/Spoon_1_collision_6.obj"/>
+    <mesh name="Lettuce_7" class="default" file="assets/ThorAssets/Kitchen Objects/Lettuce/Prefabs/Lettuce_7/Lettuce_7.obj"/>
+    <mesh name="Lettuce_7_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Lettuce/Prefabs/Lettuce_7/Lettuce_7_collision_0.obj"/>
+    <texture name="Copper_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Copper_AlbedoTransparency.png"/>
+    <material name="Copper_AlbedoTransparency" class="default" texture="Copper_AlbedoTransparency" rgba="1 1 1 1"/>
+    <material name="Glass_Detailed_White_Mat" class="default" rgba="1 1 1 0.5"/>
+    <texture name="PepperNoise" type="2d" file="assets/ThorAssets/Textures/PepperNoise.png"/>
+    <material name="PepperNoise" class="default" texture="PepperNoise" rgba="0.52205880000000005 0.47758319999999999 0.4299308 1"/>
+    <mesh name="Pepper_Shaker_2_0" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_0.obj"/>
+    <mesh name="Pepper_Shaker_2_1" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_1.obj"/>
+    <mesh name="Pepper_Shaker_2_2" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_2.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_0.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_1.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_2.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_3.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_4.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_5.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_6.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_7.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_8.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_9.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_10.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_11.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_12.obj"/>
+    <material name="Black.001" class="default" rgba="0.074898370000000006 0.074898370000000006 0.074898370000000006 1"/>
+    <mesh name="Ladle_2_0" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_0.obj"/>
+    <mesh name="Ladle_2_1" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_1.obj"/>
+    <mesh name="Ladle_2_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_0.obj"/>
+    <mesh name="Ladle_2_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_1.obj"/>
+    <mesh name="Ladle_2_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_2.obj"/>
+    <mesh name="Ladle_2_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_3.obj"/>
+    <mesh name="Ladle_2_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_4.obj"/>
+    <mesh name="Ladle_2_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_5.obj"/>
+    <mesh name="Ladle_2_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_6.obj"/>
+    <mesh name="Ladle_2_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_7.obj"/>
+    <mesh name="Ladle_2_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_8.obj"/>
+    <mesh name="Ladle_2_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_9.obj"/>
+    <mesh name="Ladle_2_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_10.obj"/>
+    <mesh name="Ladle_2_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_11.obj"/>
+    <mesh name="Ladle_2_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Ladle/Prefabs/Ladle_2/Ladle_2_collision_12.obj"/>
+    <material name="Glass_Detailed_Green_Mat" class="default" rgba="0.042900609999999999 0.1323529 0 0.5"/>
+    <texture name="Labels" type="2d" file="assets/ThorAssets/Textures/Labels.png"/>
+    <material name="Labels" class="default" texture="Labels" rgba="1 1 1 1"/>
+    <material name="Wine_Volume_Mat" class="default" rgba="0.19852939999999999 0 0.020537550000000002 1"/>
+    <mesh name="Wine_Bottle_1_0" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_0.obj"/>
+    <mesh name="Wine_Bottle_1_1" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_1.obj"/>
+    <mesh name="Wine_Bottle_1_2" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_2.obj"/>
+    <mesh name="Wine_Bottle_1_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_collision_0.obj"/>
+    <mesh name="Wine_Bottle_1_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_collision_1.obj"/>
+    <mesh name="Wine_Bottle_1_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_collision_2.obj"/>
+    <mesh name="Wine_Bottle_1_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_collision_3.obj"/>
+    <mesh name="Wine_Bottle_1_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_collision_4.obj"/>
+    <mesh name="Wine_Bottle_1_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_collision_5.obj"/>
+    <mesh name="Wine_Bottle_1_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/WineBottle/Prefabs/Wine_Bottle_1/Wine_Bottle_1_collision_6.obj"/>
+    <material name="Bowl_Decals_Off_Mat" class="default" rgba="1 1 1 0.5"/>
+    <material name="Bowl_Mat5 (Plastic - UB)" class="default" rgba="0.6323529 0.42071350000000002 0.28362890000000002 1"/>
+    <mesh name="Bowl_21_0" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_0.obj"/>
+    <mesh name="Bowl_21_1" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_1.obj"/>
+    <mesh name="Bowl_21_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_0.obj"/>
+    <mesh name="Bowl_21_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_1.obj"/>
+    <mesh name="Bowl_21_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_2.obj"/>
+    <mesh name="Bowl_21_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_3.obj"/>
+    <mesh name="Bowl_21_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_4.obj"/>
+    <mesh name="Bowl_21_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_5.obj"/>
+    <mesh name="Bowl_21_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_6.obj"/>
+    <mesh name="Bowl_21_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_7.obj"/>
+    <mesh name="Bowl_21_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_8.obj"/>
+    <mesh name="Bowl_21_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_9.obj"/>
+    <mesh name="Bowl_21_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_10.obj"/>
+    <mesh name="Bowl_21_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_11.obj"/>
+    <mesh name="Bowl_21_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_12.obj"/>
+    <mesh name="Bowl_21_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_13.obj"/>
+    <mesh name="Bowl_21_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_14.obj"/>
+    <mesh name="Bowl_21_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_15.obj"/>
+    <mesh name="Bowl_21_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_16.obj"/>
+    <mesh name="Bowl_21_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_17.obj"/>
+    <mesh name="Bowl_21_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_18.obj"/>
+    <mesh name="Bowl_21_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_19.obj"/>
+    <mesh name="Bowl_21_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_20.obj"/>
+    <mesh name="Bowl_21_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_21.obj"/>
+    <mesh name="Bowl_21_collision_22" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_22.obj"/>
+    <mesh name="Bowl_21_collision_23" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_23.obj"/>
+    <mesh name="Bowl_21_collision_24" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_24.obj"/>
+    <mesh name="Bowl_21_collision_25" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_25.obj"/>
+    <mesh name="Bowl_21_collision_26" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_26.obj"/>
+    <mesh name="Bowl_21_collision_27" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_27.obj"/>
+    <mesh name="Bowl_21_collision_28" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_28.obj"/>
+    <mesh name="Bowl_21_collision_29" class="default" file="assets/ThorAssets/Kitchen Objects/Bowl/Prefabs/Bowl_21/Bowl_21_collision_29.obj"/>
+    <texture name="PaperRollDIF" type="2d" file="assets/ThorAssets/Textures/PaperRollDIF.png"/>
+    <material name="Paper_Towel_Mat" class="default" texture="PaperRollDIF" rgba="1 1 1 1"/>
+    <mesh name="Paper_Towel_1" class="default" file="assets/ThorAssets/Kitchen Objects/PaperTowel/Prefabs/Paper_Towel_1/Paper_Towel_1.obj"/>
+    <mesh name="Paper_Towel_1_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/PaperTowel/Prefabs/Paper_Towel_1/Paper_Towel_1_collision_0.obj"/>
+    <mesh name="Paper_Towel_1_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/PaperTowel/Prefabs/Paper_Towel_1/Paper_Towel_1_collision_1.obj"/>
+    <mesh name="Paper_Towel_1_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/PaperTowel/Prefabs/Paper_Towel_1/Paper_Towel_1_collision_2.obj"/>
+    <mesh name="Paper_Towel_1_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/PaperTowel/Prefabs/Paper_Towel_1/Paper_Towel_1_collision_3.obj"/>
+    <mesh name="Paper_Towel_1_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/PaperTowel/Prefabs/Paper_Towel_1/Paper_Towel_1_collision_4.obj"/>
+    <mesh name="Paper_Towel_1_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/PaperTowel/Prefabs/Paper_Towel_1/Paper_Towel_1_collision_5.obj"/>
+    <material name="Glass_Detailed_Lit_Medium_Mat" class="default" rgba="1 1 1 0.5"/>
+    <material name="SaltNoise" class="default" rgba="0.88970590000000005 0.88970590000000005 0.88970590000000005 1"/>
+    <mesh name="Salt_Shaker_1_0" class="default" file="assets/ThorAssets/Kitchen Objects/SaltShaker/Prefabs/Salt_Shaker_1/Salt_Shaker_1_0.obj"/>
+    <mesh name="Salt_Shaker_1_1" class="default" file="assets/ThorAssets/Kitchen Objects/SaltShaker/Prefabs/Salt_Shaker_1/Salt_Shaker_1_1.obj"/>
+    <mesh name="Salt_Shaker_1_2" class="default" file="assets/ThorAssets/Kitchen Objects/SaltShaker/Prefabs/Salt_Shaker_1/Salt_Shaker_1_2.obj"/>
+    <mesh name="Salt_Shaker_1_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/SaltShaker/Prefabs/Salt_Shaker_1/Salt_Shaker_1_collision_0.obj"/>
+    <mesh name="Salt_Shaker_1_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/SaltShaker/Prefabs/Salt_Shaker_1/Salt_Shaker_1_collision_1.obj"/>
+    <material name="Soap_Bottle_Filling1_mat" class="default" rgba="0.16652249999999999 0.52775320000000003 0.64705880000000005 0.5"/>
+    <material name="Soap_Bottle_Primary5_Mat" class="default" rgba="0.67647060000000003 0.67647060000000003 0.67647060000000003 0.5"/>
+    <material name="Soap_Bottle_Secondary5_Mat" class="default" rgba="0.1803922 0.32549020000000001 0.32941179999999998 1"/>
+    <material name="Soap_Bottle_Tube_Mat" class="default" rgba="0.66911770000000004 0.66911770000000004 0.66911770000000004 0.5"/>
+    <mesh name="Soap_Bottle_10_0" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_0.obj"/>
+    <mesh name="Soap_Bottle_10_1" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_1.obj"/>
+    <mesh name="Soap_Bottle_10_2" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_2.obj"/>
+    <mesh name="Soap_Bottle_10_3" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_3.obj"/>
+    <mesh name="Soap_Bottle_10_collision_0" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_collision_0.obj"/>
+    <mesh name="Soap_Bottle_10_collision_1" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_collision_1.obj"/>
+    <mesh name="Soap_Bottle_10_collision_2" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_collision_2.obj"/>
+    <mesh name="Soap_Bottle_10_collision_3" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_collision_3.obj"/>
+    <mesh name="Soap_Bottle_10_collision_4" class="default" file="assets/ThorAssets/Bathroom Objects/SoapBottle/Prefabs/Soap_Bottle_10/Soap_Bottle_10_collision_4.obj"/>
+
+
+
+   <texture name="Fridge_Decal_Mat" type="2d" file="assets/ThorAssets/Textures/Fridge_Decal_AlbedoTransparency.png"/>
+    <material name="material_Fridge_Decal_Mat" class="default" texture="Fridge_Decal_Mat" specular="0.5" shininess="0.5" rgba="1 1 1 1"/>
+    <material name="material_Fridge_Window_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.39705879999999999 0.39705879999999999 0.39705879999999999 0.5"/>
+    <material name="material_Fridge_Interior3_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.25 0.25 0.25 1"/>
+    <texture name="Fridge_Metal_Mat" type="2d" file="assets/ThorAssets/Textures/BrushedAluminum_AlbedoTransparency.png"/>
+    <material name="material_Fridge_Metal_Mat" class="default" texture="Fridge_Metal_Mat" specular="0.5" shininess="0.5" rgba="0.875 0.875 0.875 1"/>
+    <material name="material_Fridge_Secondary1_Mat" class="default" texture="Fridge_Metal_Mat" specular="0.5" shininess="0.5" rgba="0.83088240000000002 0.83088240000000002 0.83088240000000002 1"/>
+    <material name="material_Fridge_Primary1_Mat" class="default" specular="0.5" shininess="0.5" rgba="1 1 1 1"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_0" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_0.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_1" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_1.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_2" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_2.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_3" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_3.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_4" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_4.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_5" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_5.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_6" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_6.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_55" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_55.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_41" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_41.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_40" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_40.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_54" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_54.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_42" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_42.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_56" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_56.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_57" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_57.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_43" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_43.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_47" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_47.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_52" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_52.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_53" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_53.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_46" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_46.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_50" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_50.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_44" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_44.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_45" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_45.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_51" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_51.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_2.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_36" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_36.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_22" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_22.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_23" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_23.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_37" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_37.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_3.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_1.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_21.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_35" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_35.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_34" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_34.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_20.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_0.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_4.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_18.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_24" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_24.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_30" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_30.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_31" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_31.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_25" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_25.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_19.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_5.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_7.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_33" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_33.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_27" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_27.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_26" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_26.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_32" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_32.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_6.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_17.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_16.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_8.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_14.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_28" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_28.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_29" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_29.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_15.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_9.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_39" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_39.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_11.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_10.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_38" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_38.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_12.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_13.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_60" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_60.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_48" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_48.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_49" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_49.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_61" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_61.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_62" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_62.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_59" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_59.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_FridgeBodyMesh_0_collision_collision_58" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_FridgeBodyMesh_0/Fridge_14_FridgeBodyMesh_0_collision_collision_58.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_0" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_0.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_1" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_1.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_2" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_2.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_3" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_3.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_4" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_4.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_5" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_5.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_6" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_6.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_5.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_4.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_6.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_20.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_21.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_7.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_3.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_19.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_18.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_2.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_0.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_1.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_16.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_17.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_15.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_14.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_10.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_11.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_9.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_13.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_12.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_fridge_drawer1_21_1_collision_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_fridge_drawer1_21_1/Fridge_14_fridge_drawer1_21_1_collision_collision_8.obj" scale="0.8 0.8 0.8"/>
+    <texture name="Fridge_Readout_Mat" type="2d" file="assets/ThorAssets/Textures/Fridge_Readout_AlbedoTransparency.png"/>
+    <material name="material_Fridge_Readout_Mat" class="default" texture="Fridge_Readout_Mat" specular="0.5" shininess="0.5" rgba="0 0 0 1"/>
+    <mesh name="Fridge_14_Mesh_2_0" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_0.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_1" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_1.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_2" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_2.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_3" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_3.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_4" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_4.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_5" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_5.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_6" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_6.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_13.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_2.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_3.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_12.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_1.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_10.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_11.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_0.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_4.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_15.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_29" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_29.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_28" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_28.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_14.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_5.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_16.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_7.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_6.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_17.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_26" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_26.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_27" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_27.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_19.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_8.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_25" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_25.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_30" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_30.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_24" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_24.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_9.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_18.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_20.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_21.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_23" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_23.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_2_collision_collision_22" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_2/Fridge_14_Mesh_2_collision_collision_22.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_0" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_0.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_1" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_1.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_2" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_2.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_3" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_3.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_4" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_4.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_5" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_5.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_6" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_6.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_15.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_14.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_16.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_17.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_13.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_12.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_10.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_11.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_9.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_8.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_6.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_7.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_5.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_4.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_0.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_1.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_3.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_2.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_20.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_21.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_23" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_23.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_22" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_22.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_26" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_26.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_27" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_27.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_19.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_25" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_25.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_24" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_24.obj" scale="0.8 0.8 0.8"/>
+    <mesh name="Fridge_14_Mesh_3_collision_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Fridge/Prefabs/Fridge_14/Fridge_14_Mesh_3/Fridge_14_Mesh_3_collision_collision_18.obj" scale="0.8 0.8 0.8"/>
+
+
+    <texture name="Potato3_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Potato3_AlbedoTransparency.png"/>
+    <material name="Potato3_Mat2" class="default" texture="Potato3_AlbedoTransparency" rgba="1 0.65441179999999999 0.65441179999999999 1"/>
+    <mesh name="Potato_27" class="default" file="assets/ThorAssets/Kitchen Objects/Potato/Prefabs/Potato_27/Potato_27.obj"/>
+    <mesh name="Potato_27_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Potato/Prefabs/Potato_27/Potato_27_collision_0.obj"/>
+    <texture name="Apple2_AlbedoTransparency3" type="2d" file="assets/ThorAssets/Textures/Apple2_AlbedoTransparency3.png"/>
+    <material name="Apple2_Mat3" class="default" texture="Apple2_AlbedoTransparency3" rgba="1 1 1 1"/>
+    <mesh name="Apple_21" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21.obj"/>
+    <mesh name="Apple_21_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_0.obj"/>
+    <mesh name="Apple_21_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_1.obj"/>
+    <mesh name="Apple_21_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_2.obj"/>
+    <mesh name="Apple_21_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_3.obj"/>
+    <mesh name="Apple_21_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_4.obj"/>
+    <mesh name="Apple_21_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_5.obj"/>
+    <mesh name="Apple_21_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_6.obj"/>
+    <mesh name="Apple_21_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_7.obj"/>
+    <mesh name="Apple_21_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_8.obj"/>
+    <mesh name="Apple_21_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_9.obj"/>
+    <mesh name="Apple_21_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_21/Apple_21_collision_10.obj"/>
+    <texture name="Lettuce1_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Lettuce1_AlbedoTransparency.png"/>
+    <material name="Lettuce1_Mat" class="default" texture="Lettuce1_AlbedoTransparency" rgba="0.9945233 1 0.60294119999999995 1"/>
+    <mesh name="Lettuce_5" class="default" file="assets/ThorAssets/Kitchen Objects/Lettuce/Prefabs/Lettuce_5/Lettuce_5.obj"/>
+    <mesh name="Lettuce_5_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Lettuce/Prefabs/Lettuce_5/Lettuce_5_collision_0.obj"/>
+    <texture name="Apple1_AlbedoTransparency3" type="2d" file="assets/ThorAssets/Textures/Apple1_AlbedoTransparency3.png"/>
+    <material name="Apple1_Mat3" class="default" texture="Apple1_AlbedoTransparency3" rgba="1 1 1 1"/>
+    <mesh name="Apple_11" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_11/Apple_11.obj"/>
+    <mesh name="Apple_11_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_11/Apple_11_collision_0.obj"/>
+    <mesh name="Apple_11_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_11/Apple_11_collision_1.obj"/>
+    <mesh name="Apple_11_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_11/Apple_11_collision_2.obj"/>
+    <mesh name="Apple_11_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_11/Apple_11_collision_3.obj"/>
+    <mesh name="Apple_11_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_11/Apple_11_collision_4.obj"/>
+    <mesh name="Apple_11_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_11/Apple_11_collision_5.obj"/>
+    <mesh name="Apple_11_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Apple/Prefabs/Apple_11/Apple_11_collision_6.obj"/>
+  
+    <material name="material_Microwave_Readout2B_Off_Mat" class="default" specular="0.5" shininess="0.5" rgba="0 0 0 1"/>
+    <texture name="Microwave_Decal_Mat" type="2d" file="assets/ThorAssets/Textures/Microwave_Decal_AlbedoTransparency.png"/>
+    <material name="material_Microwave_Decal_Mat" class="default" texture="Microwave_Decal_Mat" specular="0.5" shininess="0.5" rgba="1 1 1 1"/>
+    <material name="material_Microwave_Interior2_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.60294119999999995 0.60294119999999995 0.60294119999999995 1"/>
+    <material name="material_Microwave_Plate1_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.30303849999999999 0.34723480000000001 0.43382349999999997 1"/>
+    <texture name="Microwave_Metal_Mat" type="2d" file="assets/ThorAssets/Textures/BrushedIron_AlbedoTransparency.png"/>
+    <material name="material_Microwave_Metal_Mat" class="default" texture="Microwave_Metal_Mat" specular="0.5" shininess="0.5" rgba="1 1 1 1"/>
+    <material name="material_Microwave_Secondary1_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.36029410000000001 0.36029410000000001 0.36029410000000001 1"/>
+    <texture name="HammeredMetal_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/HammeredMetal_AlbedoTransparency.png"/>
+    <material name="material_Microwave_Primary1_Mat" class="default" texture="HammeredMetal_AlbedoTransparency" specular="0.5" shininess="0.5" rgba="0.56571709999999997 0.56617649999999997 0.55785039999999997 1"/>
+    <mesh name="Microwave_1_bodymesh_0_0" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_0.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_bodymesh_0_1" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_1.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_bodymesh_0_2" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_2.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_bodymesh_0_3" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_3.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_bodymesh_0_4" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_4.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_bodymesh_0_5" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_5.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_bodymesh_0_6" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_6.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_12.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_13.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_11.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_10.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_14.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_15.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_17.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_8.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_9.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_16.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_4.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_5.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_18.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_7.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_6.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_19.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_21.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_2.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_3.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_20.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_1.obj"/>
+    <mesh name="Microwave_1_bodymesh_0_collision_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_bodymesh_0/Microwave_1_bodymesh_0_collision_collision_0.obj"/>
+    <texture name="Microwave_Window1_Off_Mat" type="2d" file="assets/ThorAssets/Textures/Microwave_Window_AlbedoTransparency.png"/>
+    <material name="material_Microwave_Window1_Off_Mat" class="default" texture="Microwave_Window1_Off_Mat" specular="0.5" shininess="0.5" rgba="1 1 1 0.8"/>
+    <mesh name="Microwave_1_doormesh_1_0" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_0.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_doormesh_1_1" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_1.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_doormesh_1_2" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_2.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_doormesh_1_3" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_3.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_doormesh_1_4" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_4.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_doormesh_1_5" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_5.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_doormesh_1_6" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_6.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_doormesh_1_7" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_7.obj" scale="1 1 1"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_18.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_24" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_24.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_25" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_25.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_19.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_27" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_27.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_26" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_26.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_22" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_22.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_23" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_23.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_21.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_20.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_6.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_7.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_5.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_4.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_0.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_1.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_3.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_2.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_9.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_8.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_11.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_10.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_12.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_13.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_17.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_16.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_14.obj"/>
+    <mesh name="Microwave_1_doormesh_1_collision_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Microwave/Prefabs/Microwave_1/Microwave_1_doormesh_1/Microwave_1_doormesh_1_collision_collision_15.obj"/>
+
+  </asset>
+  <worldbody>
+    <body name="room|2" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="room|2" class="visual" type="mesh" material="LightWoodCounters3" mesh="room|2"/>
+    </body>
+    <body name="floor">
+      <geom name="floor" class="structural" type="plane" size="0 0 0.01" pos="0 0 0"/>
+    </body>
+    <body name="wall|2|0.00|4.96|4.96|4.96" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="wall|2|0.00|4.96|4.96|4.96__visual" class="visual" type="mesh" material="PureWhite" mesh="wall|2|0.00|4.96|4.96|4.96"/>
+      <geom name="wall|2|0.00|4.96|4.96|4.96__structural" class="structural" type="mesh" mesh="wall|2|0.00|4.96|4.96|4.96"/>
+    </body>
+    <body name="wall|2|4.96|0.00|4.96|4.96" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="wall|2|4.96|0.00|4.96|4.96__visual" class="visual" type="mesh" material="PureWhite" mesh="wall|2|4.96|0.00|4.96|4.96"/>
+      <geom name="wall|2|4.96|0.00|4.96|4.96_collider0" class="structural" type="mesh" mesh="wall|2|4.96|0.00|4.96|4.96_collider0"/>
+      <geom name="wall|2|4.96|0.00|4.96|4.96_collider1" class="structural" type="mesh" mesh="wall|2|4.96|0.00|4.96|4.96_collider1"/>
+      <geom name="wall|2|4.96|0.00|4.96|4.96_collider2" class="structural" type="mesh" mesh="wall|2|4.96|0.00|4.96|4.96_collider2"/>
+    </body>
+    <body name="wall|2|0.00|0.00|4.96|0.00" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="wall|2|0.00|0.00|4.96|0.00__visual" class="visual" type="mesh" material="KitchenTile" mesh="wall|2|0.00|0.00|4.96|0.00"/>
+      <geom name="wall|2|0.00|0.00|4.96|0.00__structural" class="structural" type="mesh" mesh="wall|2|0.00|0.00|4.96|0.00"/>
+    </body>
+    <body name="wall|2|0.00|0.00|0.00|4.96" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="wall|2|0.00|0.00|0.00|4.96__visual" class="visual" type="mesh" material="KitchenTile" mesh="wall|2|0.00|0.00|0.00|4.96"/>
+      <geom name="wall|2|0.00|0.00|0.00|4.96__structural" class="structural" type="mesh" mesh="wall|2|0.00|0.00|0.00|4.96"/>
+    </body>
+    <body name="wall|exterior|0.00|4.96|4.96|4.96" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="wall|exterior|0.00|4.96|4.96|4.96__visual" class="visual" type="mesh" material="bathroomTilesTan6" mesh="wall|exterior|0.00|4.96|4.96|4.96"/>
+      <geom name="wall|exterior|0.00|4.96|4.96|4.96__structural" class="structural" type="mesh" mesh="wall|exterior|0.00|4.96|4.96|4.96"/>
+    </body>
+    <body name="wall|exterior|0.00|0.00|4.96|0.00" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="wall|exterior|0.00|0.00|4.96|0.00__visual" class="visual" type="mesh" material="bathroomTilesTan6" mesh="wall|exterior|0.00|0.00|4.96|0.00"/>
+      <geom name="wall|exterior|0.00|0.00|4.96|0.00__structural" class="structural" type="mesh" mesh="wall|exterior|0.00|0.00|4.96|0.00"/>
+    </body>
+    <body name="wall|exterior|4.96|0.00|4.96|4.96" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="wall|exterior|4.96|0.00|4.96|4.96__visual" class="visual" type="mesh" material="bathroomTilesTan6" mesh="wall|exterior|4.96|0.00|4.96|4.96"/>
+      <geom name="wall|exterior|4.96|0.00|4.96|4.96_collider0" class="structural" type="mesh" mesh="wall|exterior|4.96|0.00|4.96|4.96_collider0"/>
+      <geom name="wall|exterior|4.96|0.00|4.96|4.96_collider1" class="structural" type="mesh" mesh="wall|exterior|4.96|0.00|4.96|4.96_collider1"/>
+      <geom name="wall|exterior|4.96|0.00|4.96|4.96_collider2" class="structural" type="mesh" mesh="wall|exterior|4.96|0.00|4.96|4.96_collider2"/>
+    </body>
+    <body name="wall|exterior|0.00|0.00|0.00|4.96" quat="0 0 0.70710678118654746 0.70710678118654768">
+      <geom name="wall|exterior|0.00|0.00|0.00|4.96__visual" class="visual" type="mesh" material="bathroomTilesTan6" mesh="wall|exterior|0.00|0.00|0.00|4.96"/>
+      <geom name="wall|exterior|0.00|0.00|0.00|4.96__structural" class="structural" type="mesh" mesh="wall|exterior|0.00|0.00|0.00|4.96"/>
+    </body>
+    <body name="door|1|2" pos="4.964999999999999 1.5221646123724759 1.0462727337144313" quat="0.5 0.50000000000000011 -0.49999999999999989 -0.50000000000000011">
+      <body name="Doorway_Double_7_mesh_4" pos="-0.97460999999999998 -1.0484 0" quat="1 0 0 0">
+        <geom name="door|1|2__0" class="visual" type="mesh" material="TexturesCom_WoodFine0050_1_seamless_S_rich" mesh="Doorway_Double_7_mesh_4_0"/>
+        <geom name="door|1|2__1" class="structural" type="mesh" rgba="0.20842547224578523 0.97183659561081481 0.93221415507671335 1" density="400" mesh="Doorway_Double_7_mesh_4_0_collision_0"/>
+        <geom name="door|1|2__2" class="structural" type="mesh" rgba="0.79861045077493964 0.18702522817445733 0.43949566631211068 1" density="400" mesh="Doorway_Double_7_mesh_4_0_collision_1"/>
+        <geom name="door|1|2__3" class="structural" type="mesh" rgba="0.06719371950202524 0.13362480529194753 0.70874427919490335 1" density="400" mesh="Doorway_Double_7_mesh_4_0_collision_2"/>
+        <body name="Doorway_Double_7_mesh_0" pos="0.060479999999999999 1.016 0" quat="1 0 0 0">
+          <geom name="door|1|2__4" class="visual" type="mesh" material="LightWoodCounters2" mesh="Doorway_Double_7_mesh_0_0"/>
+          <geom name="door|1|2__5" class="structural" type="mesh" rgba="0.4882100642123034 0.47927750764162691 0.5782173253693631 1" density="400" mesh="Doorway_Double_7_mesh_0_0_collision_0"/>
+          <geom name="door|1|2__6" class="visual" type="mesh" material="BlackPlastic" mesh="Doorway_Double_7_mesh_0_1"/>
+          <geom name="door|1|2__7" class="structural" type="mesh" rgba="0.92391927114181061 0.94277511232939704 0.5862919843576514 1" density="400" mesh="Doorway_Double_7_mesh_0_1_collision_0"/>
+          <body name="Doorway_Double_7_mesh_1" pos="0.85557000000000005 -0.00051999999999999995 -0.0066" quat="6.123233995736766e-17 0 1 0">
+            <geom name="door|1|2__8" class="visual" type="mesh" material="BlackPlastic" mesh="Doorway_Double_7_mesh_1_0"/>
+            <geom name="door|1|2__9" class="structural" type="mesh" rgba="0.84879768923046506 0.45080912818973418 0.46663507735074183 1" density="400" mesh="Doorway_Double_7_mesh_1_0_collision_0"/>
+            <geom name="door|1|2__10" class="structural" type="mesh" rgba="0.53727028057370996 0.77511067991385463 0.43211505537172101 1" density="400" mesh="Doorway_Double_7_mesh_1_0_collision_1"/>
+            <geom name="door|1|2__11" class="structural" type="mesh" rgba="0.51161631636458349 0.80461092937419731 0.56622514174863048 1" density="400" mesh="Doorway_Double_7_mesh_1_0_collision_2"/>
+            <geom name="door|1|2__12" class="structural" type="mesh" rgba="0.42967492076011182 0.7849247300710297 0.18061480472779712 1" density="400" mesh="Doorway_Double_7_mesh_1_0_collision_3"/>
+            <geom name="door|1|2__13" class="structural" type="mesh" rgba="0.34040209083127482 0.027704479318406916 0.041599418646110276 1" density="400" mesh="Doorway_Double_7_mesh_1_0_collision_4"/>
+          </body>
+        </body>
+        <body name="Doorway_Double_7_mesh_2" pos="1.8887399999999999 1.016 0" quat="0.0007963 0 0.99999970000000005 0">
+          <geom name="door|1|2__14" class="visual" type="mesh" material="LightWoodCounters2" mesh="Doorway_Double_7_mesh_2_0"/>
+          <geom name="door|1|2__15" class="structural" type="mesh" rgba="0.50918736484371196 0.4093556998378296 0.48766979493541252 1" density="400" mesh="Doorway_Double_7_mesh_2_0_collision_0"/>
+          <geom name="door|1|2__16" class="visual" type="mesh" material="BlackPlastic" mesh="Doorway_Double_7_mesh_2_1"/>
+          <geom name="door|1|2__17" class="structural" type="mesh" rgba="0.66547492029412614 0.93685931734504146 0.1436390278239017 1" density="400" mesh="Doorway_Double_7_mesh_2_1_collision_0"/>
+          <body name="Doorway_Double_7_mesh_3" pos="0.85557000000000005 -0.00051999999999999995 -0.0066" quat="6.123233995736766e-17 0 1 0">
+            <geom name="door|1|2__18" class="visual" type="mesh" material="BlackPlastic" mesh="Doorway_Double_7_mesh_3_0"/>
+            <geom name="door|1|2__19" class="structural" type="mesh" rgba="0.34004651682446518 0.73588980532455206 0.49896597967192846 1" density="400" mesh="Doorway_Double_7_mesh_3_0_collision_0"/>
+            <geom name="door|1|2__20" class="structural" type="mesh" rgba="0.83400837226803182 0.20794430055569302 0.40894779306650986 1" density="400" mesh="Doorway_Double_7_mesh_3_0_collision_1"/>
+            <geom name="door|1|2__21" class="structural" type="mesh" rgba="0.16668671764846832 0.40290141984290406 0.75843987722059658 1" density="400" mesh="Doorway_Double_7_mesh_3_0_collision_2"/>
+            <geom name="door|1|2__22" class="structural" type="mesh" rgba="0.83264262121218846 0.56084604914915337 0.75748046846691353 1" density="400" mesh="Doorway_Double_7_mesh_3_0_collision_3"/>
+            <geom name="door|1|2__23" class="structural" type="mesh" rgba="0.72120897015655971 0.2838583229388022 0.49664003305211735 1" density="400" mesh="Doorway_Double_7_mesh_3_0_collision_4"/>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="window|2|0" pos="3.1820963211331281 4.964999999999999 1.4973600432276724" quat="0.70710678118654746 0.70710678118654768 4.3297802811774658e-17 4.3297802811774677e-17">
+      <geom name="window|2|0__0" class="visual" type="mesh" material="WhitePlastic" mesh="Window_Slider_48x36_0"/>
+      <geom name="window|2|0__1" class="visual" type="mesh" material="Glass_White_Mat" mesh="Window_Slider_48x36_1"/>
+      <geom name="window|2|0__2" class="visual" type="mesh" material="LightWoodCabinets" mesh="Window_Slider_48x36_2"/>
+      <geom name="window|2|0__3" class="structural" type="mesh" rgba="0.94458350097900767 0.99523520152493983 0.26118874846736551 1" mesh="Window_Slider_48x36_collision_0"/>
+      <geom name="window|2|0__4" class="structural" type="mesh" rgba="0.89655840759925998 0.063886357346283784 0.96858930347936256 1" mesh="Window_Slider_48x36_collision_1"/>
+      <geom name="window|2|0__5" class="structural" type="mesh" rgba="0.13319258218492758 0.13570720691153659 0.33199748124667028 1" mesh="Window_Slider_48x36_collision_2"/>
+      <geom name="window|2|0__6" class="structural" type="mesh" rgba="0.51000534761371075 0.83431542111927726 0.11175214253621735 1" mesh="Window_Slider_48x36_collision_3"/>
+      <geom name="window|2|0__7" class="structural" type="mesh" rgba="0.81987472580005238 0.98439440445455795 0.031000769173423759 1" mesh="Window_Slider_48x36_collision_4"/>
+      <geom name="window|2|0__8" class="structural" type="mesh" rgba="0.69870183619231285 0.89876090031655587 0.025221027776411442 1" mesh="Window_Slider_48x36_collision_5"/>
+      <geom name="window|2|0__9" class="structural" type="mesh" rgba="0.59646311374821137 0.9298775979720465 0.77691852398556427 1" mesh="Window_Slider_48x36_collision_6"/>
+      <geom name="window|2|0__10" class="structural" type="mesh" rgba="0.018744487694706602 0.07929780895619154 0.3430442485035845 1" mesh="Window_Slider_48x36_collision_7"/>
+      <geom name="window|2|0__11" class="structural" type="mesh" rgba="0.78969760387412347 0.60228689167563787 0.88956559507669375 1" mesh="Window_Slider_48x36_collision_8"/>
+      <geom name="window|2|0__12" class="structural" type="mesh" rgba="0.83298839459496854 0.44754546353830393 0.8497526260675764 1" mesh="Window_Slider_48x36_collision_9"/>
+      <geom name="window|2|0__13" class="structural" type="mesh" rgba="0.25304889471312597 0.55874318327425854 0.28739217082397128 1" mesh="Window_Slider_48x36_collision_10"/>
+      <geom name="window|2|0__14" class="structural" type="mesh" rgba="0.0979904166533202 0.10726087901840975 0.83090959084306526 1" mesh="Window_Slider_48x36_collision_11"/>
+      <geom name="window|2|0__15" class="structural" type="mesh" rgba="0.072504607291032253 0.96411043709845912 0.51851018725378772 1" mesh="Window_Slider_48x36_collision_12"/>
+      <geom name="window|2|0__16" class="structural" type="mesh" rgba="0.31411417870651392 0.26845023253168643 0.22620113597352942 1" mesh="Window_Slider_48x36_collision_13"/>
+      <geom name="window|2|0__17" class="structural" type="mesh" rgba="0.62837390430052142 0.56595030077185238 0.16781723820518313 1" mesh="Window_Slider_48x36_collision_14"/>
+      <geom name="window|2|0__18" class="structural" type="mesh" rgba="0.42021371961600018 0.69929203546024854 0.085106377591711913 1" mesh="Window_Slider_48x36_collision_15"/>
+      <geom name="window|2|0__19" class="structural" type="mesh" rgba="0.83166426207832367 0.099489984091974071 0.8368438763270738 1" mesh="Window_Slider_48x36_collision_16"/>
+    </body>
+    <body name="window|2|1" pos="0 2.8158841493519935 1.4973600432276724" quat="0.49999999999999989 0.50000000000000011 0.5 0.50000000000000011">
+      <geom name="window|2|1__0" class="visual" type="mesh" material="WhitePlastic" mesh="Window_Slider_48x36_0"/>
+      <geom name="window|2|1__1" class="visual" type="mesh" material="Glass_White_Mat" mesh="Window_Slider_48x36_1"/>
+      <geom name="window|2|1__2" class="visual" type="mesh" material="LightWoodCabinets" mesh="Window_Slider_48x36_2"/>
+      <geom name="window|2|1__3" class="structural" type="mesh" rgba="0.94458350097900767 0.99523520152493983 0.26118874846736551 1" mesh="Window_Slider_48x36_collision_0"/>
+      <geom name="window|2|1__4" class="structural" type="mesh" rgba="0.89655840759925998 0.063886357346283784 0.96858930347936256 1" mesh="Window_Slider_48x36_collision_1"/>
+      <geom name="window|2|1__5" class="structural" type="mesh" rgba="0.13319258218492758 0.13570720691153659 0.33199748124667028 1" mesh="Window_Slider_48x36_collision_2"/>
+      <geom name="window|2|1__6" class="structural" type="mesh" rgba="0.51000534761371075 0.83431542111927726 0.11175214253621735 1" mesh="Window_Slider_48x36_collision_3"/>
+      <geom name="window|2|1__7" class="structural" type="mesh" rgba="0.81987472580005238 0.98439440445455795 0.031000769173423759 1" mesh="Window_Slider_48x36_collision_4"/>
+      <geom name="window|2|1__8" class="structural" type="mesh" rgba="0.69870183619231285 0.89876090031655587 0.025221027776411442 1" mesh="Window_Slider_48x36_collision_5"/>
+      <geom name="window|2|1__9" class="structural" type="mesh" rgba="0.59646311374821137 0.9298775979720465 0.77691852398556427 1" mesh="Window_Slider_48x36_collision_6"/>
+      <geom name="window|2|1__10" class="structural" type="mesh" rgba="0.018744487694706602 0.07929780895619154 0.3430442485035845 1" mesh="Window_Slider_48x36_collision_7"/>
+      <geom name="window|2|1__11" class="structural" type="mesh" rgba="0.78969760387412347 0.60228689167563787 0.88956559507669375 1" mesh="Window_Slider_48x36_collision_8"/>
+      <geom name="window|2|1__12" class="structural" type="mesh" rgba="0.83298839459496854 0.44754546353830393 0.8497526260675764 1" mesh="Window_Slider_48x36_collision_9"/>
+      <geom name="window|2|1__13" class="structural" type="mesh" rgba="0.25304889471312597 0.55874318327425854 0.28739217082397128 1" mesh="Window_Slider_48x36_collision_10"/>
+      <geom name="window|2|1__14" class="structural" type="mesh" rgba="0.0979904166533202 0.10726087901840975 0.83090959084306526 1" mesh="Window_Slider_48x36_collision_11"/>
+      <geom name="window|2|1__15" class="structural" type="mesh" rgba="0.072504607291032253 0.96411043709845912 0.51851018725378772 1" mesh="Window_Slider_48x36_collision_12"/>
+      <geom name="window|2|1__16" class="structural" type="mesh" rgba="0.31411417870651392 0.26845023253168643 0.22620113597352942 1" mesh="Window_Slider_48x36_collision_13"/>
+      <geom name="window|2|1__17" class="structural" type="mesh" rgba="0.62837390430052142 0.56595030077185238 0.16781723820518313 1" mesh="Window_Slider_48x36_collision_14"/>
+      <geom name="window|2|1__18" class="structural" type="mesh" rgba="0.42021371961600018 0.69929203546024854 0.085106377591711913 1" mesh="Window_Slider_48x36_collision_15"/>
+      <geom name="window|2|1__19" class="structural" type="mesh" rgba="0.83166426207832367 0.099489984091974071 0.8368438763270738 1" mesh="Window_Slider_48x36_collision_16"/>
+    </body>
+    <body name="CounterTop|2|0" pos="1.5 1.0 0.47099846601486195" euler="1.5707963267948966 -3.14 0">
+      <geom name="CounterTop|2|0__0" class="visual" type="mesh" material="DarkWood2" mesh="Countertop_L_10x6_0"/>
+      <geom name="CounterTop|2|0__1" class="visual" type="mesh" material="marbleBase2" mesh="Countertop_L_10x6_1"/>
+      <geom name="CounterTop|2|0__2" class="structural" type="mesh" rgba="0.4283072075012101 0.72657180979839309 0.86504007736069743 1" mesh="Countertop_L_10x6_collision_0"/>
+      <geom name="CounterTop|2|0__3" class="structural" type="mesh" rgba="0.55392012566541926 0.29157500594792385 0.4349546146699611 1" mesh="Countertop_L_10x6_collision_1"/>
+    </body>
+
+
+    <body name="Toaster|surface|2|1" pos="1.50 0.35 1.0326501131057737" euler="1.5707963267948966 3.14 0">
+      <joint name="Toaster|surface|2|1" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Toaster|surface|2|1__0" class="visual" type="mesh" material="Toaster_Coils_Off_Mat" mesh="Toaster_24_0"/>
+      <geom name="Toaster|surface|2|1__1" class="visual" type="mesh" material="Toaster_Decal_Mat" mesh="Toaster_24_1"/>
+      <geom name="Toaster|surface|2|1__2" class="visual" type="mesh" material="Toaster_Interior_Mat" mesh="Toaster_24_2"/>
+      <geom name="Toaster|surface|2|1__3" class="visual" type="mesh" material="Toaster_Metal_Mat" mesh="Toaster_24_3"/>
+      <geom name="Toaster|surface|2|1__4" class="visual" type="mesh" material="Toaster_Primary2_Mat" mesh="Toaster_24_4"/>
+      <geom name="Toaster|surface|2|1__5" class="dynamic" type="mesh" rgba="0.027709459879449283 0.79455900947105018 0.75883055764201168 1" mesh="Toaster_24_collision_0"/>
+      <geom name="Toaster|surface|2|1__6" class="dynamic" type="mesh" rgba="0.25376551542414316 0.21653747657588263 0.9880875341591624 1" mesh="Toaster_24_collision_1"/>
+      <geom name="Toaster|surface|2|1__7" class="dynamic" type="mesh" rgba="0.068557931059840427 0.37766632768071273 0.39095555071779953 1" mesh="Toaster_24_collision_2"/>
+      <geom name="Toaster|surface|2|1__8" class="dynamic" type="mesh" rgba="0.19008823920584084 0.037483593177119134 0.27072436387753274 1" mesh="Toaster_24_collision_3"/>
+      <geom name="Toaster|surface|2|1__9" class="dynamic" type="mesh" rgba="0.76150422299431886 0.2061887402218493 0.031826351855318014 1" mesh="Toaster_24_collision_4"/>
+      <geom name="Toaster|surface|2|1__10" class="dynamic" type="mesh" rgba="0.22261182665714152 0.43810651342105189 0.70130429845179187 1" mesh="Toaster_24_collision_5"/>
+      <geom name="Toaster|surface|2|1__11" class="dynamic" type="mesh" rgba="0.89432190892742403 0.45363196048382048 0.80972914168313725 1" mesh="Toaster_24_collision_6"/>
+      <geom name="Toaster|surface|2|1__12" class="dynamic" type="mesh" rgba="0.81082747151378853 0.99739916829540731 0.72135506433476282 1" mesh="Toaster_24_collision_7"/>
+      <geom name="Toaster|surface|2|1__13" class="dynamic" type="mesh" rgba="0.85209485954635933 0.061103350220273911 0.19016214314666668 1" mesh="Toaster_24_collision_8"/>
+      <geom name="Toaster|surface|2|1__14" class="dynamic" type="mesh" rgba="0.060616646293474075 0.54649596008154511 0.56687885327655496 1" mesh="Toaster_24_collision_9"/>
+      <geom name="Toaster|surface|2|1__15" class="dynamic" type="mesh" rgba="0.55928660682071363 0.38510842215702223 0.49697782517812572 1" mesh="Toaster_24_collision_10"/>
+      <geom name="Toaster|surface|2|1__16" class="dynamic" type="mesh" rgba="0.59012517745578352 0.35880684085514181 0.39992312228124538 1" mesh="Toaster_24_collision_11"/>
+      <geom name="Toaster|surface|2|1__17" class="dynamic" type="mesh" rgba="0.00025034903103937634 0.53705358592349317 0.55375109497780817 1" mesh="Toaster_24_collision_12"/>
+      <geom name="Toaster|surface|2|1__18" class="dynamic" type="mesh" rgba="0.80659516782450491 0.79171945307363056 0.20216814864681387 1" mesh="Toaster_24_collision_13"/>
+      <geom name="Toaster|surface|2|1__19" class="dynamic" type="mesh" rgba="0.12873685533429846 0.71957468744438335 0.3899044982052563 1" mesh="Toaster_24_collision_14"/>
+      <geom name="Toaster|surface|2|1__20" class="dynamic" type="mesh" rgba="0.022158678836316503 0.68480862948555121 0.22617828208166291 1" mesh="Toaster_24_collision_15"/>
+      <geom name="Toaster|surface|2|1__21" class="dynamic" type="mesh" rgba="0.54507972644351965 0.41275113183949896 0.17620719194377177 1" mesh="Toaster_24_collision_16"/>
+      <geom name="Toaster|surface|2|1__22" class="dynamic" type="mesh" rgba="0.58523454637740557 0.81190485730742812 0.6829220141968575 1" mesh="Toaster_24_collision_17"/>
+      <geom name="Toaster|surface|2|1__23" class="dynamic" type="mesh" rgba="0.67712398395651319 0.42916924341127938 0.019193567980156145 1" mesh="Toaster_24_collision_18"/>
+      <geom name="Toaster|surface|2|1__24" class="dynamic" type="mesh" rgba="0.91683313090827045 0.9155144004534489 0.67606639570065163 1" mesh="Toaster_24_collision_19"/>
+      <geom name="Toaster|surface|2|1__25" class="dynamic" type="mesh" rgba="0.51794558828634385 0.34464940423894763 0.35261580720271379 1" mesh="Toaster_24_collision_20"/>
+      <geom name="Toaster|surface|2|1__26" class="dynamic" type="mesh" rgba="0.061856369580212345 0.13521124512245786 0.083468842377680486 1" mesh="Toaster_24_collision_21"/>
+      <geom name="Toaster|surface|2|1__27" class="dynamic" type="mesh" rgba="0.67238373413650387 0.89838458463188198 0.55109563759984548 1" mesh="Toaster_24_collision_22"/>
+      <geom name="Toaster|surface|2|1__28" class="dynamic" type="mesh" rgba="0.91982679316032934 0.90332873126058244 0.053811601690983868 1" mesh="Toaster_24_collision_23"/>
+      <geom name="Toaster|surface|2|1__29" class="dynamic" type="mesh" rgba="0.14934648097140091 0.39489500423901314 0.35720994298756004 1" mesh="Toaster_24_collision_24"/>
+      <geom name="Toaster|surface|2|1__30" class="dynamic" type="mesh" rgba="0.28511460933377264 0.46410247780497238 0.72572582600234059 1" mesh="Toaster_24_collision_25"/>
+      <geom name="Toaster|surface|2|1__31" class="dynamic" type="mesh" rgba="0.93187587457351484 0.79796212542799927 0.62289864980955878 1" mesh="Toaster_24_collision_26"/>
+      <geom name="Toaster|surface|2|1__32" class="dynamic" type="mesh" rgba="0.1597451236312657 0.29110452232408524 0.1376118873708595 1" mesh="Toaster_24_collision_27"/>
+      <geom name="Toaster|surface|2|1__33" class="dynamic" type="mesh" rgba="0.30660343232094756 0.8821899539689968 0.044545575125089831 1" mesh="Toaster_24_collision_28"/>
+      <geom name="Toaster|surface|2|1__34" class="dynamic" type="mesh" rgba="0.66864933319863418 0.32478246304779956 0.71216467741538059 1" mesh="Toaster_24_collision_29"/>
+    </body>
+    <body name="SprayBottle|surface|2|2" pos="1.250 0.45 1.066107392311096" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="SprayBottle|surface|2|2" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="SprayBottle|surface|2|2__0" class="visual" type="mesh" material="SprayBottle1_varH" mesh="Spray_Bottle_8"/>
+      <geom name="SprayBottle|surface|2|2__1" class="dynamic" type="mesh" rgba="0.49853748402752163 0.52323758141649912 0.23573116770261193 1" mesh="Spray_Bottle_8_collision_0"/>
+      <geom name="SprayBottle|surface|2|2__2" class="dynamic" type="mesh" rgba="0.16538193979904059 0.38363749842245065 0.21557355268118894 1" mesh="Spray_Bottle_8_collision_1"/>
+      <geom name="SprayBottle|surface|2|2__3" class="dynamic" type="mesh" rgba="0.1843636453967008 0.67938454561991579 0.57032015883350418 1" mesh="Spray_Bottle_8_collision_2"/>
+      <geom name="SprayBottle|surface|2|2__4" class="dynamic" type="mesh" rgba="0.59103889354946071 0.6095890635980229 0.14297792585178715 1" mesh="Spray_Bottle_8_collision_3"/>
+      <geom name="SprayBottle|surface|2|2__5" class="dynamic" type="mesh" rgba="0.73751529947797512 0.48503909040224058 0.53009171904018415 1" mesh="Spray_Bottle_8_collision_4"/>
+      <geom name="SprayBottle|surface|2|2__6" class="dynamic" type="mesh" rgba="0.13025478445520078 0.81603041161827516 0.36005691091016623 1" mesh="Spray_Bottle_8_collision_5"/>
+    </body>
+    <body name="Spatula|surface|2|6" pos="2.50 0.5 0.95099121332168557" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Spatula|surface|2|6" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Spatula|surface|2|6__0" class="visual" type="mesh" material="HammeredMetal_AlbedoTransparency" mesh="Spatula_1_0"/>
+      <geom name="Spatula|surface|2|6__1" class="visual" type="mesh" material="Material.003" mesh="Spatula_1_1"/>
+      <geom name="Spatula|surface|2|6__2" class="dynamic" type="mesh" rgba="0.67101901648989093 0.94724230648450136 0.93194611815004458 1" mesh="Spatula_1_collision_0"/>
+      <geom name="Spatula|surface|2|6__3" class="dynamic" type="mesh" rgba="0.5887995059040021 0.72670003406154227 0.74815375251823568 1" mesh="Spatula_1_collision_1"/>
+    </body>
+    <body name="Potato|surface|2|9" pos="2.850 0.75 0.9986758232116697" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Potato|surface|2|9" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Potato|surface|2|9__0" class="visual" type="mesh" material="Potato3_Mat4" mesh="Potato_29"/>
+      <geom name="Potato|surface|2|9__1" class="dynamic" type="mesh" rgba="0.61314683190529584 0.35906131297695454 0.96594360735515916 1" mesh="Potato_29_collision_0"/>
+    </body>
+    <body name="Tomato|surface|2|14" pos="2.60 0.55 0.99217438697814919" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Tomato|surface|2|14" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Tomato|surface|2|14__0" class="visual" type="mesh" material="Tomato2_Mat3" mesh="Tomato_19"/>
+      <geom name="Tomato|surface|2|14__1" class="dynamic" type="mesh" rgba="0.31099793727946057 0.99869866241869087 0.5867906937459223 1" mesh="Tomato_19_collision_0"/>
+      <geom name="Tomato|surface|2|14__2" class="dynamic" type="mesh" rgba="0.68699952728036473 0.23479057234913925 0.41357876808092353 1" mesh="Tomato_19_collision_1"/>
+      <geom name="Tomato|surface|2|14__3" class="dynamic" type="mesh" rgba="0.48030346508744259 0.81477686543264016 0.15710695330245306 1" mesh="Tomato_19_collision_2"/>
+      <geom name="Tomato|surface|2|14__4" class="dynamic" type="mesh" rgba="0.71015869305376933 0.68661929592167026 0.72932440706514701 1" mesh="Tomato_19_collision_3"/>
+      <geom name="Tomato|surface|2|14__5" class="dynamic" type="mesh" rgba="0.34397954019750154 0.46692699122924619 0.42895785150662713 1" mesh="Tomato_19_collision_4"/>
+      <geom name="Tomato|surface|2|14__6" class="dynamic" type="mesh" rgba="0.76526209643852294 0.16950746847331355 0.010285188939370471 1" mesh="Tomato_19_collision_5"/>
+      <geom name="Tomato|surface|2|14__7" class="dynamic" type="mesh" rgba="0.36735994248993509 0.037760689099102129 0.41359947458496937 1" mesh="Tomato_19_collision_6"/>
+      <geom name="Tomato|surface|2|14__8" class="dynamic" type="mesh" rgba="0.38238139666944448 0.8529394769053783 0.054653089287542755 1" mesh="Tomato_19_collision_7"/>
+    </body>
+    <body name="Cup|surface|2|15" pos="2.70 1.05 1.02129590511322" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Cup|surface|2|15" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Cup|surface|2|15__0" class="visual" type="mesh" material="RoboTHOR_Cup_Primary_AI2_Mat" mesh="RoboTHOR_cup_ai2_v"/>
+      <geom name="Cup|surface|2|15__1" class="dynamic" type="mesh" rgba="0.042543761964414673 0.56815027718503353 0.41109990708448774 1" mesh="RoboTHOR_cup_ai2_v_collision_0"/>
+      <geom name="Cup|surface|2|15__2" class="dynamic" type="mesh" rgba="0.35202155922088163 0.75049788182659871 0.18420769609666177 1" mesh="RoboTHOR_cup_ai2_v_collision_1"/>
+      <geom name="Cup|surface|2|15__3" class="dynamic" type="mesh" rgba="0.48797045177686071 0.057948387190959405 0.69250261605686914 1" mesh="RoboTHOR_cup_ai2_v_collision_2"/>
+      <geom name="Cup|surface|2|15__4" class="dynamic" type="mesh" rgba="0.66559157800733648 0.55306366884988634 0.0069587407185232042 1" mesh="RoboTHOR_cup_ai2_v_collision_3"/>
+      <geom name="Cup|surface|2|15__5" class="dynamic" type="mesh" rgba="0.63876737964948915 0.45291484749383637 0.39841074655330622 1" mesh="RoboTHOR_cup_ai2_v_collision_4"/>
+      <geom name="Cup|surface|2|15__6" class="dynamic" type="mesh" rgba="0.62659817137777907 0.82633344376889739 0.71851231288694195 1" mesh="RoboTHOR_cup_ai2_v_collision_5"/>
+      <geom name="Cup|surface|2|15__7" class="dynamic" type="mesh" rgba="0.81062398213630649 0.27935741833606553 0.2072753426650088 1" mesh="RoboTHOR_cup_ai2_v_collision_6"/>
+      <geom name="Cup|surface|2|15__8" class="dynamic" type="mesh" rgba="0.69312109098386743 0.01000059395591979 0.65499593507316833 1" mesh="RoboTHOR_cup_ai2_v_collision_7"/>
+      <geom name="Cup|surface|2|15__9" class="dynamic" type="mesh" rgba="0.87286052307946549 0.64969014352123799 0.41510732378018522 1" mesh="RoboTHOR_cup_ai2_v_collision_8"/>
+      <geom name="Cup|surface|2|15__10" class="dynamic" type="mesh" rgba="0.26240324064479281 0.97085455525794451 0.83252529568805378 1" mesh="RoboTHOR_cup_ai2_v_collision_9"/>
+      <geom name="Cup|surface|2|15__11" class="dynamic" type="mesh" rgba="0.053475925762371479 0.082714546814947054 0.96788186488091221 1" mesh="RoboTHOR_cup_ai2_v_collision_10"/>
+      <geom name="Cup|surface|2|15__12" class="dynamic" type="mesh" rgba="0.32903500791320228 0.36058679888199341 0.74754561272403874 1" mesh="RoboTHOR_cup_ai2_v_collision_11"/>
+      <geom name="Cup|surface|2|15__13" class="dynamic" type="mesh" rgba="0.92927122886210256 0.71851170193150737 0.012070865822876753 1" mesh="RoboTHOR_cup_ai2_v_collision_12"/>
+    </body>
+    <body name="DishSponge|surface|2|19" pos="1.1395729064941388 0.5204641342163068 0.95620280504226662" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="DishSponge|surface|2|19" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="DishSponge|surface|2|19__0" class="visual" type="mesh" material="SpongeGreenYellow" mesh="Dish_Sponge_1"/>
+      <geom name="DishSponge|surface|2|19__1" class="dynamic" type="mesh" rgba="0.70672043769633031 0.42090086659132675 0.095149139203413946 1" mesh="Dish_Sponge_1_collision_0"/>
+    </body>
+    <body name="PepperShaker|surface|2|22" pos="2.594865417480467 1.561687469482404 1.0418900251388548" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="PepperShaker|surface|2|22" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="PepperShaker|surface|2|22__0" class="visual" type="mesh" material="PepperNoise" mesh="Pepper_Shaker_2_0"/>
+      <geom name="PepperShaker|surface|2|22__1" class="visual" type="mesh" material="Copper_AlbedoTransparency" mesh="Pepper_Shaker_2_1"/>
+      <geom name="PepperShaker|surface|2|22__2" class="visual" type="mesh" material="Glass_Detailed_White_Mat" mesh="Pepper_Shaker_2_2"/>
+      <geom name="PepperShaker|surface|2|22__3" class="dynamic" type="mesh" rgba="0.44551615785766907 0.12021102991511246 0.060753029502396028 1" mesh="Pepper_Shaker_2_collision_0"/>
+      <geom name="PepperShaker|surface|2|22__4" class="dynamic" type="mesh" rgba="0.9152170694422026 0.99004892811048828 0.32857366899183404 1" mesh="Pepper_Shaker_2_collision_1"/>
+      <geom name="PepperShaker|surface|2|22__5" class="dynamic" type="mesh" rgba="0.81509368496931101 0.91405006207521688 0.099357186707249912 1" mesh="Pepper_Shaker_2_collision_2"/>
+      <geom name="PepperShaker|surface|2|22__6" class="dynamic" type="mesh" rgba="0.10380881824405885 0.75046761963779607 0.56093788902975694 1" mesh="Pepper_Shaker_2_collision_3"/>
+      <geom name="PepperShaker|surface|2|22__7" class="dynamic" type="mesh" rgba="0.37693261341778506 0.048590830614482883 0.82139355930738522 1" mesh="Pepper_Shaker_2_collision_4"/>
+      <geom name="PepperShaker|surface|2|22__8" class="dynamic" type="mesh" rgba="0.99875407627732171 0.12397787184123266 0.77325681506746546 1" mesh="Pepper_Shaker_2_collision_5"/>
+      <geom name="PepperShaker|surface|2|22__9" class="dynamic" type="mesh" rgba="0.19448174458912859 0.42770457051973432 0.94688242901606412 1" mesh="Pepper_Shaker_2_collision_6"/>
+      <geom name="PepperShaker|surface|2|22__10" class="dynamic" type="mesh" rgba="0.1076524107668928 0.44065180580263519 0.41817065506901652 1" mesh="Pepper_Shaker_2_collision_7"/>
+      <geom name="PepperShaker|surface|2|22__11" class="dynamic" type="mesh" rgba="0.13698619269025036 0.72743451454280839 0.14533274595140722 1" mesh="Pepper_Shaker_2_collision_8"/>
+      <geom name="PepperShaker|surface|2|22__12" class="dynamic" type="mesh" rgba="0.26924365164816211 0.31607296041740884 0.031176332288305186 1" mesh="Pepper_Shaker_2_collision_9"/>
+      <geom name="PepperShaker|surface|2|22__13" class="dynamic" type="mesh" rgba="0.39940605182424271 0.41054486538417145 0.44848283810972622 1" mesh="Pepper_Shaker_2_collision_10"/>
+      <geom name="PepperShaker|surface|2|22__14" class="dynamic" type="mesh" rgba="0.67370657203734818 0.92472926636667341 0.27863448756138476 1" mesh="Pepper_Shaker_2_collision_11"/>
+      <geom name="PepperShaker|surface|2|22__15" class="dynamic" type="mesh" rgba="0.34402683286933655 0.3604217710627925 0.92700538655451803 1" mesh="Pepper_Shaker_2_collision_12"/>
+    </body>
+    <body name="Ladle|surface|2|23" pos="2.7217945098876935 0.6220779418928 0.96390789747238137" euler="1.5707963267948966 0.3 0">
+      <joint name="Ladle|surface|2|23" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Ladle|surface|2|23__0" class="visual" type="mesh" material="Black.001" mesh="Ladle_2_0"/>
+      <geom name="Ladle|surface|2|23__1" class="visual" type="mesh" material="HammeredMetal_AlbedoTransparency" mesh="Ladle_2_1"/>
+      <geom name="Ladle|surface|2|23__2" class="dynamic" type="mesh" rgba="0.47573751162662015 0.34475805177216745 0.7266315462463413 1" mesh="Ladle_2_collision_0"/>
+      <geom name="Ladle|surface|2|23__3" class="dynamic" type="mesh" rgba="0.46652223468811849 0.37125353709482722 0.86349345311570702 1" mesh="Ladle_2_collision_1"/>
+      <geom name="Ladle|surface|2|23__4" class="dynamic" type="mesh" rgba="0.014539736149295268 0.28782711002225514 0.14451224726921785 1" mesh="Ladle_2_collision_2"/>
+      <geom name="Ladle|surface|2|23__5" class="dynamic" type="mesh" rgba="0.20642569697489888 0.021766753907992875 0.67017887674141741 1" mesh="Ladle_2_collision_3"/>
+      <geom name="Ladle|surface|2|23__6" class="dynamic" type="mesh" rgba="0.88072470335007991 0.67107200691102109 0.63394961787177329 1" mesh="Ladle_2_collision_4"/>
+      <geom name="Ladle|surface|2|23__7" class="dynamic" type="mesh" rgba="0.63540052858360718 0.7981675849821781 0.95401789151166871 1" mesh="Ladle_2_collision_5"/>
+      <geom name="Ladle|surface|2|23__8" class="dynamic" type="mesh" rgba="0.70049342377463608 0.27608084286225376 0.1113604008039828 1" mesh="Ladle_2_collision_6"/>
+      <geom name="Ladle|surface|2|23__9" class="dynamic" type="mesh" rgba="0.91464428082918792 0.0051547525123257776 0.55677127956590122 1" mesh="Ladle_2_collision_7"/>
+      <geom name="Ladle|surface|2|23__10" class="dynamic" type="mesh" rgba="0.97179444346045207 0.055251284272598955 0.89091463369153479 1" mesh="Ladle_2_collision_8"/>
+      <geom name="Ladle|surface|2|23__11" class="dynamic" type="mesh" rgba="0.20337836561147471 0.45007495153680876 0.43021754288793157 1" mesh="Ladle_2_collision_9"/>
+      <geom name="Ladle|surface|2|23__12" class="dynamic" type="mesh" rgba="0.57449626966701128 0.55875823843166406 0.83380453241874042 1" mesh="Ladle_2_collision_10"/>
+      <geom name="Ladle|surface|2|23__13" class="dynamic" type="mesh" rgba="0.57149627663165969 0.13393441877354517 0.61860453049500286 1" mesh="Ladle_2_collision_11"/>
+      <geom name="Ladle|surface|2|23__14" class="dynamic" type="mesh" rgba="0.42820970709564277 0.55331487032973448 0.17095011967965767 1" mesh="Ladle_2_collision_12"/>
+    </body>
+    <body name="WineBottle|surface|2|25" pos="2.7619261741638166 1.4359579086303693 1.1562806844711302" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="WineBottle|surface|2|25" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="WineBottle|surface|2|25__0" class="visual" type="mesh" material="Wine_Volume_Mat" mesh="Wine_Bottle_1_0"/>
+      <geom name="WineBottle|surface|2|25__1" class="visual" type="mesh" material="Labels" mesh="Wine_Bottle_1_1"/>
+      <geom name="WineBottle|surface|2|25__2" class="visual" type="mesh" material="Glass_Detailed_Green_Mat" mesh="Wine_Bottle_1_2"/>
+      <geom name="WineBottle|surface|2|25__3" class="dynamic" type="mesh" rgba="0.10213699178175939 0.53412998907484477 0.23067725010092388 1" mesh="Wine_Bottle_1_collision_0"/>
+      <geom name="WineBottle|surface|2|25__4" class="dynamic" type="mesh" rgba="0.39896158195691334 0.35741666676646355 0.81350318960730894 1" mesh="Wine_Bottle_1_collision_1"/>
+      <geom name="WineBottle|surface|2|25__5" class="dynamic" type="mesh" rgba="0.24236740222934683 0.8084485326014661 0.96129949249871272 1" mesh="Wine_Bottle_1_collision_2"/>
+      <geom name="WineBottle|surface|2|25__6" class="dynamic" type="mesh" rgba="0.71571245091992197 0.19597381633629118 0.37076471283888557 1" mesh="Wine_Bottle_1_collision_3"/>
+      <geom name="WineBottle|surface|2|25__7" class="dynamic" type="mesh" rgba="0.71275586696363846 0.12303227282136731 0.63706951267549472 1" mesh="Wine_Bottle_1_collision_4"/>
+      <geom name="WineBottle|surface|2|25__8" class="dynamic" type="mesh" rgba="0.39275253551546097 0.046944993501339405 0.31340520851343556 1" mesh="Wine_Bottle_1_collision_5"/>
+      <geom name="WineBottle|surface|2|25__9" class="dynamic" type="mesh" rgba="0.95071921863993603 0.529431974714621 0.65882849370628271 1" mesh="Wine_Bottle_1_collision_6"/>
+    </body>
+    <body name="Bowl|surface|2|26" pos="2.033004951477049 0.29824523924 1.05" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Bowl|surface|2|26" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Bowl|surface|2|26__0" class="visual" type="mesh" material="Bowl_Decals_Off_Mat" mesh="Bowl_21_0"/>
+      <geom name="Bowl|surface|2|26__1" class="visual" type="mesh" material="Bowl_Mat5 (Plastic - UB)" mesh="Bowl_21_1"/>
+      <geom name="Bowl|surface|2|26__2" class="dynamic" type="mesh" rgba="0.85516516504930673 0.20921567464862612 0.30895965279871485 1" mesh="Bowl_21_collision_0"/>
+      <geom name="Bowl|surface|2|26__3" class="dynamic" type="mesh" rgba="0.043443671450536847 0.4697259908870931 0.50750732678869881 1" mesh="Bowl_21_collision_1"/>
+      <geom name="Bowl|surface|2|26__4" class="dynamic" type="mesh" rgba="0.52041666702025602 0.42319305819825037 0.44548274250378261 1" mesh="Bowl_21_collision_2"/>
+      <geom name="Bowl|surface|2|26__5" class="dynamic" type="mesh" rgba="0.83644472953372384 0.85532464268178621 0.52954381789316129 1" mesh="Bowl_21_collision_3"/>
+      <geom name="Bowl|surface|2|26__6" class="dynamic" type="mesh" rgba="0.7225506504772844 0.16230947308533039 0.62133246742569492 1" mesh="Bowl_21_collision_4"/>
+      <geom name="Bowl|surface|2|26__7" class="dynamic" type="mesh" rgba="0.1603224456837119 0.077265361646837838 0.68403429858428044 1" mesh="Bowl_21_collision_5"/>
+      <geom name="Bowl|surface|2|26__8" class="dynamic" type="mesh" rgba="0.077165846745615552 0.78376294884257025 0.51833535339493919 1" mesh="Bowl_21_collision_6"/>
+      <geom name="Bowl|surface|2|26__9" class="dynamic" type="mesh" rgba="0.61874991742039709 0.50924592463386653 0.51599374214164206 1" mesh="Bowl_21_collision_7"/>
+      <geom name="Bowl|surface|2|26__10" class="dynamic" type="mesh" rgba="0.90862958417872985 0.31176064329221875 0.18201478712946217 1" mesh="Bowl_21_collision_8"/>
+      <geom name="Bowl|surface|2|26__11" class="dynamic" type="mesh" rgba="0.93220497061213958 0.2773364014774633 0.66817168549680084 1" mesh="Bowl_21_collision_9"/>
+      <geom name="Bowl|surface|2|26__12" class="dynamic" type="mesh" rgba="0.43229411266373441 0.085851634928765241 0.47534154807192097 1" mesh="Bowl_21_collision_10"/>
+      <geom name="Bowl|surface|2|26__13" class="dynamic" type="mesh" rgba="0.63485167234976947 0.91338859599640521 0.72250022186773966 1" mesh="Bowl_21_collision_11"/>
+      <geom name="Bowl|surface|2|26__14" class="dynamic" type="mesh" rgba="0.036584425419960986 0.51458758720106346 0.77554854272356932 1" mesh="Bowl_21_collision_12"/>
+      <geom name="Bowl|surface|2|26__15" class="dynamic" type="mesh" rgba="0.47086507810146994 0.29577547514611802 0.80368602890068042 1" mesh="Bowl_21_collision_13"/>
+      <geom name="Bowl|surface|2|26__16" class="dynamic" type="mesh" rgba="0.67279057255733932 0.12800329775890029 0.3621927807840899 1" mesh="Bowl_21_collision_14"/>
+      <geom name="Bowl|surface|2|26__17" class="dynamic" type="mesh" rgba="0.82926420033443882 0.90547638960259347 0.64667428407875616 1" mesh="Bowl_21_collision_15"/>
+      <geom name="Bowl|surface|2|26__18" class="dynamic" type="mesh" rgba="0.2108820922494723 0.070147655095219696 0.93370627083900792 1" mesh="Bowl_21_collision_16"/>
+      <geom name="Bowl|surface|2|26__19" class="dynamic" type="mesh" rgba="0.10214900892718459 0.65314074111866949 0.83270551176530683 1" mesh="Bowl_21_collision_17"/>
+      <geom name="Bowl|surface|2|26__20" class="dynamic" type="mesh" rgba="0.87309773632398491 0.81243627568781507 0.64719588020786867 1" mesh="Bowl_21_collision_18"/>
+      <geom name="Bowl|surface|2|26__21" class="dynamic" type="mesh" rgba="0.32122783039617053 0.64934387071890853 0.84881372522383702 1" mesh="Bowl_21_collision_19"/>
+      <geom name="Bowl|surface|2|26__22" class="dynamic" type="mesh" rgba="0.90519233387187614 0.25744279816460203 0.17101656821576394 1" mesh="Bowl_21_collision_20"/>
+      <geom name="Bowl|surface|2|26__23" class="dynamic" type="mesh" rgba="0.93208869116136472 0.71833862916787705 0.30557795464369042 1" mesh="Bowl_21_collision_21"/>
+      <geom name="Bowl|surface|2|26__24" class="dynamic" type="mesh" rgba="0.59639573138264057 0.65761085326850188 0.64174964065075835 1" mesh="Bowl_21_collision_22"/>
+      <geom name="Bowl|surface|2|26__25" class="dynamic" type="mesh" rgba="0.23027852424562201 0.33648956899137439 0.4444262950091481 1" mesh="Bowl_21_collision_23"/>
+      <geom name="Bowl|surface|2|26__26" class="dynamic" type="mesh" rgba="0.41225030755197889 0.68440078734660126 0.54153202669399902 1" mesh="Bowl_21_collision_24"/>
+      <geom name="Bowl|surface|2|26__27" class="dynamic" type="mesh" rgba="0.95787336930752598 0.83616048112270236 0.9848011373199711 1" mesh="Bowl_21_collision_25"/>
+      <geom name="Bowl|surface|2|26__28" class="dynamic" type="mesh" rgba="0.6757781795113601 0.18307455783335136 0.44621027457410412 1" mesh="Bowl_21_collision_26"/>
+      <geom name="Bowl|surface|2|26__29" class="dynamic" type="mesh" rgba="0.69126628083558428 0.24337696271402076 0.25526383933916286 1" mesh="Bowl_21_collision_27"/>
+      <geom name="Bowl|surface|2|26__30" class="dynamic" type="mesh" rgba="0.67786187457918357 0.28056573343867708 0.27315659809523607 1" mesh="Bowl_21_collision_28"/>
+      <geom name="Bowl|surface|2|26__31" class="dynamic" type="mesh" rgba="0.049793433265378662 0.17094215631047416 0.64870229630224607 1" mesh="Bowl_21_collision_29"/>
+    </body>
+    <body name="PaperTowelRoll|surface|2|28" pos="2.8474650382995588 1.305785369873029 1.0508309602737425" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="PaperTowelRoll|surface|2|28" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="PaperTowelRoll|surface|2|28__0" class="visual" type="mesh" material="Paper_Towel_Mat" mesh="Paper_Towel_1"/>
+      <geom name="PaperTowelRoll|surface|2|28__1" class="dynamic" type="mesh" rgba="0.31224153548971811 0.71777008740298953 0.20000994871561439 1" mesh="Paper_Towel_1_collision_0"/>
+      <geom name="PaperTowelRoll|surface|2|28__2" class="dynamic" type="mesh" rgba="0.1902077773599643 0.020195337160173632 0.69172769327453287 1" mesh="Paper_Towel_1_collision_1"/>
+      <geom name="PaperTowelRoll|surface|2|28__3" class="dynamic" type="mesh" rgba="0.59881779132269208 0.93684797908744921 0.84644046989606825 1" mesh="Paper_Towel_1_collision_2"/>
+      <geom name="PaperTowelRoll|surface|2|28__4" class="dynamic" type="mesh" rgba="0.48655377443603887 0.25850712283239075 0.97548022938960244 1" mesh="Paper_Towel_1_collision_3"/>
+      <geom name="PaperTowelRoll|surface|2|28__5" class="dynamic" type="mesh" rgba="0.091354429988310004 0.16930800940327695 0.51024058683855067 1" mesh="Paper_Towel_1_collision_4"/>
+      <geom name="PaperTowelRoll|surface|2|28__6" class="dynamic" type="mesh" rgba="0.47133105706755241 0.020400412583910343 0.24178743368877953 1" mesh="Paper_Towel_1_collision_5"/>
+    </body>
+    <body name="SaltShaker|surface|2|30" pos="2.5974521636962873 1.4311876296997053 0.99878156185150124" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="SaltShaker|surface|2|30" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="SaltShaker|surface|2|30__0" class="visual" type="mesh" material="Glass_Detailed_Lit_Medium_Mat" mesh="Salt_Shaker_1_0"/>
+      <geom name="SaltShaker|surface|2|30__1" class="visual" type="mesh" material="HammeredMetal_AlbedoTransparency" mesh="Salt_Shaker_1_1"/>
+      <geom name="SaltShaker|surface|2|30__2" class="visual" type="mesh" material="SaltNoise" mesh="Salt_Shaker_1_2"/>
+      <geom name="SaltShaker|surface|2|30__3" class="dynamic" type="mesh" rgba="0.30671907586508862 0.045630308395782082 0.67785078595221915 1" mesh="Salt_Shaker_1_collision_0"/>
+      <geom name="SaltShaker|surface|2|30__4" class="dynamic" type="mesh" rgba="0.13312496327956413 0.97034148468043402 0.17132406135072542 1" mesh="Salt_Shaker_1_collision_1"/>
+    </body>
+    <body name="SoapBottle|surface|2|32" pos="2.794865417480467 1.67128593444824201 1.0985858440399168" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="SoapBottle|surface|2|32" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="SoapBottle|surface|2|32__0" class="visual" type="mesh" material="Soap_Bottle_Filling1_mat" mesh="Soap_Bottle_10_0"/>
+      <geom name="SoapBottle|surface|2|32__1" class="visual" type="mesh" material="Soap_Bottle_Tube_Mat" mesh="Soap_Bottle_10_1"/>
+      <geom name="SoapBottle|surface|2|32__2" class="visual" type="mesh" material="Soap_Bottle_Secondary5_Mat" mesh="Soap_Bottle_10_2"/>
+      <geom name="SoapBottle|surface|2|32__3" class="visual" type="mesh" material="Soap_Bottle_Primary5_Mat" mesh="Soap_Bottle_10_3"/>
+      <geom name="SoapBottle|surface|2|32__4" class="dynamic" type="mesh" rgba="0.8374065663545105 0.67390740443975328 0.95470470663880869 1" mesh="Soap_Bottle_10_collision_0"/>
+      <geom name="SoapBottle|surface|2|32__5" class="dynamic" type="mesh" rgba="0.86848733136516365 0.029075340852965703 0.25659121958829167 1" mesh="Soap_Bottle_10_collision_1"/>
+      <geom name="SoapBottle|surface|2|32__6" class="dynamic" type="mesh" rgba="0.19761406585402719 0.54978297258520814 0.62047138593164275 1" mesh="Soap_Bottle_10_collision_2"/>
+      <geom name="SoapBottle|surface|2|32__7" class="dynamic" type="mesh" rgba="0.60594585226164732 0.45446738120101327 0.27398644380859227 1" mesh="Soap_Bottle_10_collision_3"/>
+      <geom name="SoapBottle|surface|2|32__8" class="dynamic" type="mesh" rgba="0.41325174371394824 0.80101074205035216 0.65535495450620107 1" mesh="Soap_Bottle_10_collision_4"/>
+    </body>
+  </worldbody>
+  <contact>
+  </contact>
+  <equality>
+  </equality>
+</mujoco>
