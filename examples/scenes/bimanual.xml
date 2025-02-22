@@ -1,0 +1,102 @@
+<mujoco model="bi-franka">
+  <compiler angle="radian" meshdir="assets" texturedir="assets" autolimits="true"/>
+
+  <default>
+    <default class="panda">
+      <material specular="0.5" shininess="0.25"/>
+      <joint armature="0.1" damping="1" axis="0 0 1" range="-2.8973 2.8973"/>
+      <general dyntype="none" biastype="affine" ctrlrange="-2.8973 2.8973" forcerange="-87 87"/>
+      <default class="finger">
+        <joint axis="0 1 0" type="slide" range="0 0.04"/>
+      </default>
+
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom type="mesh" group="3"/>
+        <default class="fingertip_pad_collision_1">
+          <geom type="box" size="0.0085 0.004 0.0085" pos="0 0.0055 0.0445"/>
+        </default>
+        <default class="fingertip_pad_collision_2">
+          <geom type="box" size="0.003 0.002 0.003" pos="0.0055 0.002 0.05"/>
+        </default>
+        <default class="fingertip_pad_collision_3">
+          <geom type="box" size="0.003 0.002 0.003" pos="-0.0055 0.002 0.05"/>
+        </default>
+        <default class="fingertip_pad_collision_4">
+          <geom type="box" size="0.003 0.002 0.0035" pos="0.0055 0.002 0.0395"/>
+        </default>
+        <default class="fingertip_pad_collision_5">
+          <geom type="box" size="0.003 0.002 0.0035" pos="-0.0055 0.002 0.0395"/>
+        </default>
+      </default>
+    </default>
+  </default>
+
+  <default>
+    <default class="table">
+      <default class="table-visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2" euler="1.5708 0 0"/>
+      </default>
+      <default class="table-collision">
+        <geom type="mesh" group="3" euler="1.5708 0 0"/>
+      </default>
+    </default>
+  </default>
+
+  <asset>
+    <material class="panda" name="white" rgba="1 1 1 1"/>
+    <material class="panda" name="off_white" rgba="0.901961 0.921569 0.929412 1"/>
+    <material class="panda" name="black" rgba="0.25 0.25 0.25 1"/>
+    <material class="panda" name="green" rgba="0 1 0 1"/>
+    <material class="panda" name="light_blue" rgba="0.039216 0.541176 0.780392 1"/>
+
+    <!-- Collision meshes -->
+    <mesh name="link0_c" file="link0.stl"/>
+  </asset>
+
+  <asset>
+    <texture type="2d" name="table" file="table.png"/>
+    <material name="table" specular="0.3" shininess="0.5" rgba="0.62 0.62 0.6 1" texture="table"/>
+    <material name="table_legs" specular="0.3" shininess="0.5" rgba="1 1 1 1" texture="table"/>
+    <mesh file="table.obj"/>
+    <mesh file="table_legs.obj"/>
+    <mesh file="table_collision_001.obj"/>
+    <mesh file="table_collision_002.obj"/>
+    <mesh file="table_collision_003.obj"/>
+    <mesh file="table_collision_004.obj"/>
+    <mesh file="table_collision_005.obj"/>
+    <mesh file="table_collision_006.obj"/>
+    <mesh file="table_collision_007.obj"/>
+  </asset>
+
+  <worldbody>
+    <light name="top" pos="0 0 2" mode="trackcom"/>
+
+    <!-- LEFT TABLE -->
+    <body name="fa-table" childclass="table" pos="0 0 0" euler="0 0 1.5707963267948966">
+      <geom name="fa-mesh" mesh="table" class="table-visual" material="table"/>
+      <geom name="fa-mesh_legs" mesh="table_legs" class="table-visual" material="table_legs"/>
+      <geom name="fa-collider_001" mesh="table_collision_001" class="table-collision"/>
+      <geom name="fa-collider_002" mesh="table_collision_002" class="table-collision"/>
+      <geom name="fa-collider_003" mesh="table_collision_003" class="table-collision"/>
+      <geom name="fa-collider_004" mesh="table_collision_004" class="table-collision"/>
+      <geom name="fa-collider_005" mesh="table_collision_005" class="table-collision"/>
+      <geom name="fa-collider_006" mesh="table_collision_006" class="table-collision"/>
+      <geom name="fa-collider_007" mesh="table_collision_007" class="table-collision"/>
+    </body>
+
+    <body name="target_left" pos="0.5 0 1.1" quat="0 1 0 0" mocap="true">
+      <geom type="box" size=".05 .05 .05" contype="0" conaffinity="0" rgba=".6 .3 .3 .5"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+
+    <body name="target_right" pos="0.5 0 1.1" quat="0 1 0 0" mocap="true">
+      <geom type="box" size=".05 .05 .05" contype="0" conaffinity="0" rgba=".6 .3 .3 .5"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+
+  </worldbody>
+
+</mujoco>
