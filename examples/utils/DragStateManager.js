@@ -47,26 +47,26 @@ export class DragStateManager {
     }
     start(x, y) {
         this.physicsObject = null;
-        this.updateRaycaster(x, y);
-        let intersects = this.raycaster.intersectObjects(this.scene.children);
-        for (let i = 0; i < intersects.length; i++) {
-            let obj = intersects[i].object;
-            if (obj.bodyID && obj.bodyID > 0) {
-                this.physicsObject = obj;
-                this.grabDistance = intersects[0].distance;
-                let hit = this.raycaster.ray.origin.clone();
-                hit.addScaledVector(this.raycaster.ray.direction, this.grabDistance);
-                this.arrow.position.copy(hit);
-                //this.physicsObject.startGrab(hit);
-                this.active = true;
-                this.controls.enabled = false;
-                this.localHit = obj.worldToLocal(hit.clone());
-                this.worldHit.copy(hit);
-                this.currentWorld.copy(hit);
-                this.arrow.visible = true;
-                break;
-            }
-        }
+        //// this.updateRaycaster(x, y);
+        //// let intersects = this.raycaster.intersectObjects(this.scene.children);
+        //// for (let i = 0; i < intersects.length; i++) {
+        ////     let obj = intersects[i].object;
+        ////     if (obj.bodyID && obj.bodyID > 0) {
+        ////         this.physicsObject = obj;
+        ////         this.grabDistance = intersects[0].distance;
+        ////         let hit = this.raycaster.ray.origin.clone();
+        ////         hit.addScaledVector(this.raycaster.ray.direction, this.grabDistance);
+        ////         this.arrow.position.copy(hit);
+        ////         //this.physicsObject.startGrab(hit);
+        ////         this.active = true;
+        ////         this.controls.enabled = false;
+        ////         this.localHit = obj.worldToLocal(hit.clone());
+        ////         this.worldHit.copy(hit);
+        ////         this.currentWorld.copy(hit);
+        ////         this.arrow.visible = true;
+        ////         break;
+        ////     }
+        //// }
     }
     move(x, y) {
         if (this.active) {

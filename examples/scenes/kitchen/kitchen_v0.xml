@@ -97,6 +97,129 @@
     <mesh name="Countertop_L_10x6_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Countertops/Prefabs/Countertop_L_10x6/Countertop_L_10x6_1.obj"/>
     <mesh name="Countertop_L_10x6_collision_0" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Countertops/Prefabs/Countertop_L_10x6/Countertop_L_10x6_collision_0.obj"/>
     <mesh name="Countertop_L_10x6_collision_1" class="default" file="assets/ThorAssets/ManipulaTHOR Objects/Countertops/Prefabs/Countertop_L_10x6/Countertop_L_10x6_collision_1.obj"/>
+
+    <material name="Toaster_Coils_Off_Mat" class="default" rgba="0.1603774 0.1603774 0.1603774 1"/>
+    <texture name="Toaster_Decal_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Toaster_Decal_AlbedoTransparency.png"/>
+    <material name="Toaster_Decal_Mat" class="default" texture="Toaster_Decal_AlbedoTransparency" rgba="1 1 1 1"/>
+    <material name="Toaster_Interior_Mat" class="default" rgba="0 0 0 1"/>
+    <material name="Toaster_Metal_Mat" class="default" texture="HammeredMetal_AlbedoTransparency" rgba="0.33823530000000002 0.3208261 0.3208261 1"/>
+    <texture name="MetalBumpy_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/MetalBumpy_AlbedoTransparency.png"/>
+    <material name="Toaster_Primary2_Mat" class="default" texture="MetalBumpy_AlbedoTransparency" rgba="0.53525080000000003 0.66907289999999997 0.73529409999999995 1"/>
+    <texture name="SprayBottle1_DefaultMaterial_AlbedoTransparency 7" type="2d" file="assets/ThorAssets/Textures/SprayBottle1_DefaultMaterial_AlbedoTransparency 7.png"/>
+    <material name="SprayBottle1_varH" class="default" texture="SprayBottle1_DefaultMaterial_AlbedoTransparency 7" rgba="1 1 1 1"/>
+    <material name="HammeredMetal_AlbedoTransparency" class="default" texture="HammeredMetal_AlbedoTransparency" rgba="1 1 1 1"/>
+    <material name="Material.003" class="default" rgba="0.098505019999999999 0.098505019999999999 0.098505019999999999 1"/>
+    <material name="Potato3_Mat4" class="default" texture="Potato3_AlbedoTransparency" rgba="0.77941179999999999 0.75846409999999997 0.47567039999999999 1"/>
+    <texture name="Potato1_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Potato1_AlbedoTransparency.png"/>
+    <material name="Potato1_Mat3" class="default" texture="Potato1_AlbedoTransparency" rgba="0.86029409999999995 0.84703200000000001 0.37954149999999998 1"/>
+    <texture name="Tomato2_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Tomato2_AlbedoTransparency.png"/>
+    <material name="Tomato2_Mat3" class="default" texture="Tomato2_AlbedoTransparency" rgba="1 0.63970590000000005 0.51600000000000001 1"/>
+    <texture name="RoboTHOR_Cup_Primary_AI2_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/RoboTHOR_Cup_Primary_AI2_AlbedoTransparency.png"/>
+    <material name="RoboTHOR_Cup_Primary_AI2_Mat" class="default" texture="RoboTHOR_Cup_Primary_AI2_AlbedoTransparency" rgba="1 1 1 1"/>
+    <texture name="SpongeGreenYellow" type="2d" file="assets/ThorAssets/Textures/SpongeGreenYellow.png"/>
+    <material name="SpongeGreenYellow" class="default" texture="SpongeGreenYellow" rgba="1 1 1 1"/>
+    <texture name="Copper_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Copper_AlbedoTransparency.png"/>
+    <material name="Copper_AlbedoTransparency" class="default" texture="Copper_AlbedoTransparency" rgba="1 1 1 1"/>
+    <material name="Glass_Detailed_White_Mat" class="default" rgba="1 1 1 0.5"/>
+    <texture name="PepperNoise" type="2d" file="assets/ThorAssets/Textures/PepperNoise.png"/>
+    <material name="PepperNoise" class="default" texture="PepperNoise" rgba="0.52205880000000005 0.47758319999999999 0.4299308 1"/>
+    <material name="Black.001" class="default" rgba="0.074898370000000006 0.074898370000000006 0.074898370000000006 1"/>
+    <material name="Glass_Detailed_Green_Mat" class="default" rgba="0.042900609999999999 0.1323529 0 0.5"/>
+    <texture name="Labels" type="2d" file="assets/ThorAssets/Textures/Labels.png"/>
+    <material name="Labels" class="default" texture="Labels" rgba="1 1 1 1"/>
+    <material name="Wine_Volume_Mat" class="default" rgba="0.19852939999999999 0 0.020537550000000002 1"/>
+    <material name="Bowl_Decals_Off_Mat" class="default" rgba="1 1 1 0.5"/>
+    <material name="Bowl_Mat5 (Plastic - UB)" class="default" rgba="0.6323529 0.42071350000000002 0.28362890000000002 1"/>
+    <texture name="PaperRollDIF" type="2d" file="assets/ThorAssets/Textures/PaperRollDIF.png"/>
+    <material name="Paper_Towel_Mat" class="default" texture="PaperRollDIF" rgba="1 1 1 1"/>
+    <material name="Glass_Detailed_Lit_Medium_Mat" class="default" rgba="1 1 1 0.5"/>
+    <material name="SaltNoise" class="default" rgba="0.88970590000000005 0.88970590000000005 0.88970590000000005 1"/>
+    <material name="Soap_Bottle_Filling1_mat" class="default" rgba="0.16652249999999999 0.52775320000000003 0.64705880000000005 0.5"/>
+    <material name="Soap_Bottle_Primary5_Mat" class="default" rgba="0.67647060000000003 0.67647060000000003 0.67647060000000003 0.5"/>
+    <material name="Soap_Bottle_Secondary5_Mat" class="default" rgba="0.1803922 0.32549020000000001 0.32941179999999998 1"/>
+    <material name="Soap_Bottle_Tube_Mat" class="default" rgba="0.66911770000000004 0.66911770000000004 0.66911770000000004 0.5"/>
+
+
+
+    <texture name="Fridge_Decal_Mat" type="2d" file="assets/ThorAssets/Textures/Fridge_Decal_AlbedoTransparency.png"/>
+    <material name="material_Fridge_Decal_Mat" class="default" texture="Fridge_Decal_Mat" specular="0.5" shininess="0.5" rgba="1 1 1 1"/>
+    <material name="material_Fridge_Window_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.39705879999999999 0.39705879999999999 0.39705879999999999 0.5"/>
+    <material name="material_Fridge_Interior3_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.25 0.25 0.25 1"/>
+    <texture name="Fridge_Metal_Mat" type="2d" file="assets/ThorAssets/Textures/BrushedAluminum_AlbedoTransparency.png"/>
+    <material name="material_Fridge_Metal_Mat" class="default" texture="Fridge_Metal_Mat" specular="0.5" shininess="0.5" rgba="0.875 0.875 0.875 1"/>
+    <material name="material_Fridge_Secondary1_Mat" class="default" texture="Fridge_Metal_Mat" specular="0.5" shininess="0.5" rgba="0.83088240000000002 0.83088240000000002 0.83088240000000002 1"/>
+    <material name="material_Fridge_Primary1_Mat" class="default" specular="0.5" shininess="0.5" rgba="1 1 1 1"/>
+    <texture name="Fridge_Readout_Mat" type="2d" file="assets/ThorAssets/Textures/Fridge_Readout_AlbedoTransparency.png"/>
+    <material name="material_Fridge_Readout_Mat" class="default" texture="Fridge_Readout_Mat" specular="0.5" shininess="0.5" rgba="0 0 0 1"/>
+
+
+    <texture name="Potato3_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Potato3_AlbedoTransparency.png"/>
+    <material name="Potato3_Mat2" class="default" texture="Potato3_AlbedoTransparency" rgba="1 0.65441179999999999 0.65441179999999999 1"/>
+    <texture name="Apple2_AlbedoTransparency3" type="2d" file="assets/ThorAssets/Textures/Apple2_AlbedoTransparency3.png"/>
+    <material name="Apple2_Mat3" class="default" texture="Apple2_AlbedoTransparency3" rgba="1 1 1 1"/>
+    <texture name="Lettuce1_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/Lettuce1_AlbedoTransparency.png"/>
+    <material name="Lettuce1_Mat" class="default" texture="Lettuce1_AlbedoTransparency" rgba="0.9945233 1 0.60294119999999995 1"/>
+    <texture name="Apple1_AlbedoTransparency3" type="2d" file="assets/ThorAssets/Textures/Apple1_AlbedoTransparency3.png"/>
+    <material name="Apple1_Mat3" class="default" texture="Apple1_AlbedoTransparency3" rgba="1 1 1 1"/>
+
+    <material name="material_Microwave_Readout2B_Off_Mat" class="default" specular="0.5" shininess="0.5" rgba="0 0 0 1"/>
+    <texture name="Microwave_Decal_Mat" type="2d" file="assets/ThorAssets/Textures/Microwave_Decal_AlbedoTransparency.png"/>
+    <material name="material_Microwave_Decal_Mat" class="default" texture="Microwave_Decal_Mat" specular="0.5" shininess="0.5" rgba="1 1 1 1"/>
+    <material name="material_Microwave_Interior2_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.60294119999999995 0.60294119999999995 0.60294119999999995 1"/>
+    <material name="material_Microwave_Plate1_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.30303849999999999 0.34723480000000001 0.43382349999999997 1"/>
+    <texture name="Microwave_Metal_Mat" type="2d" file="assets/ThorAssets/Textures/BrushedIron_AlbedoTransparency.png"/>
+    <material name="material_Microwave_Metal_Mat" class="default" texture="Microwave_Metal_Mat" specular="0.5" shininess="0.5" rgba="1 1 1 1"/>
+    <material name="material_Microwave_Secondary1_Mat" class="default" specular="0.5" shininess="0.5" rgba="0.36029410000000001 0.36029410000000001 0.36029410000000001 1"/>
+    <texture name="HammeredMetal_AlbedoTransparency" type="2d" file="assets/ThorAssets/Textures/HammeredMetal_AlbedoTransparency.png"/>
+    <material name="material_Microwave_Primary1_Mat" class="default" texture="HammeredMetal_AlbedoTransparency" specular="0.5" shininess="0.5" rgba="0.56571709999999997 0.56617649999999997 0.55785039999999997 1"/>
+    <texture name="Microwave_Window1_Off_Mat" type="2d" file="assets/ThorAssets/Textures/Microwave_Window_AlbedoTransparency.png"/>
+    <material name="material_Microwave_Window1_Off_Mat" class="default" texture="Microwave_Window1_Off_Mat" specular="0.5" shininess="0.5" rgba="1 1 1 0.8"/>
+
+    <mesh name="Toaster_24_0" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_0.obj"/>
+    <mesh name="Toaster_24_1" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_1.obj"/>
+    <mesh name="Toaster_24_2" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_2.obj"/>
+    <mesh name="Toaster_24_3" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_3.obj"/>
+    <mesh name="Toaster_24_4" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_4.obj"/>
+    <mesh name="Toaster_24_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_0.obj"/>
+    <mesh name="Toaster_24_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_1.obj"/>
+    <mesh name="Toaster_24_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_2.obj"/>
+    <mesh name="Toaster_24_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_3.obj"/>
+    <mesh name="Toaster_24_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_4.obj"/>
+    <mesh name="Toaster_24_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_5.obj"/>
+    <mesh name="Toaster_24_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_6.obj"/>
+    <mesh name="Toaster_24_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_7.obj"/>
+    <mesh name="Toaster_24_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_8.obj"/>
+    <mesh name="Toaster_24_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_9.obj"/>
+    <mesh name="Toaster_24_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_10.obj"/>
+    <mesh name="Toaster_24_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_11.obj"/>
+    <mesh name="Toaster_24_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_12.obj"/>
+    <mesh name="Toaster_24_collision_13" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_13.obj"/>
+    <mesh name="Toaster_24_collision_14" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_14.obj"/>
+    <mesh name="Toaster_24_collision_15" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_15.obj"/>
+    <mesh name="Toaster_24_collision_16" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_16.obj"/>
+    <mesh name="Toaster_24_collision_17" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_17.obj"/>
+    <mesh name="Toaster_24_collision_18" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_18.obj"/>
+    <mesh name="Toaster_24_collision_19" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_19.obj"/>
+    <mesh name="Toaster_24_collision_20" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_20.obj"/>
+    <mesh name="Toaster_24_collision_21" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_21.obj"/>
+    <mesh name="Toaster_24_collision_22" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_22.obj"/>
+    <mesh name="Toaster_24_collision_23" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_23.obj"/>
+    <mesh name="Toaster_24_collision_24" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_24.obj"/>
+    <mesh name="Toaster_24_collision_25" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_25.obj"/>
+    <mesh name="Toaster_24_collision_26" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_26.obj"/>
+    <mesh name="Toaster_24_collision_27" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_27.obj"/>
+    <mesh name="Toaster_24_collision_28" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_28.obj"/>
+    <mesh name="Toaster_24_collision_29" class="default" file="assets/ThorAssets/Kitchen Objects/Toaster/Prefabs/Toaster_24/Toaster_24_collision_29.obj"/>
+
+    <mesh name="Spray_Bottle_8" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8.obj"/>
+    <mesh name="Spray_Bottle_8_collision_0" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_0.obj"/>
+    <mesh name="Spray_Bottle_8_collision_1" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_1.obj"/>
+    <mesh name="Spray_Bottle_8_collision_2" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_2.obj"/>
+    <mesh name="Spray_Bottle_8_collision_3" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_3.obj"/>
+    <mesh name="Spray_Bottle_8_collision_4" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_4.obj"/>
+    <mesh name="Spray_Bottle_8_collision_5" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_5.obj"/>
+
+
   </asset>
 
   <worldbody>
@@ -162,6 +285,62 @@
       <geom name="CounterTop|2|0__2" class="structural" type="mesh" rgba="0.4283072075012101 0.72657180979839309 0.86504007736069743 1" mesh="Countertop_L_10x6_collision_0"/>
       <geom name="CounterTop|2|0__3" class="structural" type="mesh" rgba="0.55392012566541926 0.29157500594792385 0.4349546146699611 1" mesh="Countertop_L_10x6_collision_1"/>
     </body>
+
+
+    <body name="Toaster|surface|2|1" pos="1.50 0.35 1.0326501131057737" euler="1.5707963267948966 3.14 0">
+      <joint name="Toaster|surface|2|1" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Toaster|surface|2|1__0" class="visual" type="mesh" material="Toaster_Coils_Off_Mat" mesh="Toaster_24_0"/>
+      <geom name="Toaster|surface|2|1__1" class="visual" type="mesh" material="Toaster_Decal_Mat" mesh="Toaster_24_1"/>
+      <geom name="Toaster|surface|2|1__2" class="visual" type="mesh" material="Toaster_Interior_Mat" mesh="Toaster_24_2"/>
+      <geom name="Toaster|surface|2|1__3" class="visual" type="mesh" material="Toaster_Metal_Mat" mesh="Toaster_24_3"/>
+      <geom name="Toaster|surface|2|1__4" class="visual" type="mesh" material="Toaster_Primary2_Mat" mesh="Toaster_24_4"/>
+      <geom name="Toaster|surface|2|1__5" class="dynamic" type="mesh" rgba="0.027709459879449283 0.79455900947105018 0.75883055764201168 1" mesh="Toaster_24_collision_0"/>
+      <geom name="Toaster|surface|2|1__6" class="dynamic" type="mesh" rgba="0.25376551542414316 0.21653747657588263 0.9880875341591624 1" mesh="Toaster_24_collision_1"/>
+      <geom name="Toaster|surface|2|1__7" class="dynamic" type="mesh" rgba="0.068557931059840427 0.37766632768071273 0.39095555071779953 1" mesh="Toaster_24_collision_2"/>
+      <geom name="Toaster|surface|2|1__8" class="dynamic" type="mesh" rgba="0.19008823920584084 0.037483593177119134 0.27072436387753274 1" mesh="Toaster_24_collision_3"/>
+      <geom name="Toaster|surface|2|1__9" class="dynamic" type="mesh" rgba="0.76150422299431886 0.2061887402218493 0.031826351855318014 1" mesh="Toaster_24_collision_4"/>
+      <geom name="Toaster|surface|2|1__10" class="dynamic" type="mesh" rgba="0.22261182665714152 0.43810651342105189 0.70130429845179187 1" mesh="Toaster_24_collision_5"/>
+      <geom name="Toaster|surface|2|1__11" class="dynamic" type="mesh" rgba="0.89432190892742403 0.45363196048382048 0.80972914168313725 1" mesh="Toaster_24_collision_6"/>
+      <geom name="Toaster|surface|2|1__12" class="dynamic" type="mesh" rgba="0.81082747151378853 0.99739916829540731 0.72135506433476282 1" mesh="Toaster_24_collision_7"/>
+      <geom name="Toaster|surface|2|1__13" class="dynamic" type="mesh" rgba="0.85209485954635933 0.061103350220273911 0.19016214314666668 1" mesh="Toaster_24_collision_8"/>
+      <geom name="Toaster|surface|2|1__14" class="dynamic" type="mesh" rgba="0.060616646293474075 0.54649596008154511 0.56687885327655496 1" mesh="Toaster_24_collision_9"/>
+      <geom name="Toaster|surface|2|1__15" class="dynamic" type="mesh" rgba="0.55928660682071363 0.38510842215702223 0.49697782517812572 1" mesh="Toaster_24_collision_10"/>
+      <geom name="Toaster|surface|2|1__16" class="dynamic" type="mesh" rgba="0.59012517745578352 0.35880684085514181 0.39992312228124538 1" mesh="Toaster_24_collision_11"/>
+      <geom name="Toaster|surface|2|1__17" class="dynamic" type="mesh" rgba="0.00025034903103937634 0.53705358592349317 0.55375109497780817 1" mesh="Toaster_24_collision_12"/>
+      <geom name="Toaster|surface|2|1__18" class="dynamic" type="mesh" rgba="0.80659516782450491 0.79171945307363056 0.20216814864681387 1" mesh="Toaster_24_collision_13"/>
+      <geom name="Toaster|surface|2|1__19" class="dynamic" type="mesh" rgba="0.12873685533429846 0.71957468744438335 0.3899044982052563 1" mesh="Toaster_24_collision_14"/>
+      <geom name="Toaster|surface|2|1__20" class="dynamic" type="mesh" rgba="0.022158678836316503 0.68480862948555121 0.22617828208166291 1" mesh="Toaster_24_collision_15"/>
+      <geom name="Toaster|surface|2|1__21" class="dynamic" type="mesh" rgba="0.54507972644351965 0.41275113183949896 0.17620719194377177 1" mesh="Toaster_24_collision_16"/>
+      <geom name="Toaster|surface|2|1__22" class="dynamic" type="mesh" rgba="0.58523454637740557 0.81190485730742812 0.6829220141968575 1" mesh="Toaster_24_collision_17"/>
+      <geom name="Toaster|surface|2|1__23" class="dynamic" type="mesh" rgba="0.67712398395651319 0.42916924341127938 0.019193567980156145 1" mesh="Toaster_24_collision_18"/>
+      <geom name="Toaster|surface|2|1__24" class="dynamic" type="mesh" rgba="0.91683313090827045 0.9155144004534489 0.67606639570065163 1" mesh="Toaster_24_collision_19"/>
+      <geom name="Toaster|surface|2|1__25" class="dynamic" type="mesh" rgba="0.51794558828634385 0.34464940423894763 0.35261580720271379 1" mesh="Toaster_24_collision_20"/>
+      <geom name="Toaster|surface|2|1__26" class="dynamic" type="mesh" rgba="0.061856369580212345 0.13521124512245786 0.083468842377680486 1" mesh="Toaster_24_collision_21"/>
+      <geom name="Toaster|surface|2|1__27" class="dynamic" type="mesh" rgba="0.67238373413650387 0.89838458463188198 0.55109563759984548 1" mesh="Toaster_24_collision_22"/>
+      <geom name="Toaster|surface|2|1__28" class="dynamic" type="mesh" rgba="0.91982679316032934 0.90332873126058244 0.053811601690983868 1" mesh="Toaster_24_collision_23"/>
+      <geom name="Toaster|surface|2|1__29" class="dynamic" type="mesh" rgba="0.14934648097140091 0.39489500423901314 0.35720994298756004 1" mesh="Toaster_24_collision_24"/>
+      <geom name="Toaster|surface|2|1__30" class="dynamic" type="mesh" rgba="0.28511460933377264 0.46410247780497238 0.72572582600234059 1" mesh="Toaster_24_collision_25"/>
+      <geom name="Toaster|surface|2|1__31" class="dynamic" type="mesh" rgba="0.93187587457351484 0.79796212542799927 0.62289864980955878 1" mesh="Toaster_24_collision_26"/>
+      <geom name="Toaster|surface|2|1__32" class="dynamic" type="mesh" rgba="0.1597451236312657 0.29110452232408524 0.1376118873708595 1" mesh="Toaster_24_collision_27"/>
+      <geom name="Toaster|surface|2|1__33" class="dynamic" type="mesh" rgba="0.30660343232094756 0.8821899539689968 0.044545575125089831 1" mesh="Toaster_24_collision_28"/>
+      <geom name="Toaster|surface|2|1__34" class="dynamic" type="mesh" rgba="0.66864933319863418 0.32478246304779956 0.71216467741538059 1" mesh="Toaster_24_collision_29"/>
+    </body>
+
+    <body name="SprayBottle|surface|2|2" pos="1.250 0.45 1.066107392311096" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="SprayBottle|surface|2|2" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="SprayBottle|surface|2|2__0" class="visual" type="mesh" material="SprayBottle1_varH" mesh="Spray_Bottle_8"/>
+      <geom name="SprayBottle|surface|2|2__1" class="dynamic" type="mesh" rgba="0.49853748402752163 0.52323758141649912 0.23573116770261193 1" mesh="Spray_Bottle_8_collision_0"/>
+      <geom name="SprayBottle|surface|2|2__2" class="dynamic" type="mesh" rgba="0.16538193979904059 0.38363749842245065 0.21557355268118894 1" mesh="Spray_Bottle_8_collision_1"/>
+      <geom name="SprayBottle|surface|2|2__3" class="dynamic" type="mesh" rgba="0.1843636453967008 0.67938454561991579 0.57032015883350418 1" mesh="Spray_Bottle_8_collision_2"/>
+      <geom name="SprayBottle|surface|2|2__4" class="dynamic" type="mesh" rgba="0.59103889354946071 0.6095890635980229 0.14297792585178715 1" mesh="Spray_Bottle_8_collision_3"/>
+      <geom name="SprayBottle|surface|2|2__5" class="dynamic" type="mesh" rgba="0.73751529947797512 0.48503909040224058 0.53009171904018415 1" mesh="Spray_Bottle_8_collision_4"/>
+      <geom name="SprayBottle|surface|2|2__6" class="dynamic" type="mesh" rgba="0.13025478445520078 0.81603041161827516 0.36005691091016623 1" mesh="Spray_Bottle_8_collision_5"/>
+    </body>
+
+
+
 
   </worldbody>
 </mujoco>
