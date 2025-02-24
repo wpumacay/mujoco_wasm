@@ -219,6 +219,59 @@
     <mesh name="Spray_Bottle_8_collision_4" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_4.obj"/>
     <mesh name="Spray_Bottle_8_collision_5" class="default" file="assets/ThorAssets/Bathroom Objects/SprayBottle/Prefabs/Spray_Bottle_8/Spray_Bottle_8_collision_5.obj"/>
 
+    <mesh name="Spatula_1_0" class="default" file="assets/ThorAssets/Kitchen Objects/Spatula/Prefabs/Spatula_1/Spatula_1_0.obj"/>
+    <mesh name="Spatula_1_1" class="default" file="assets/ThorAssets/Kitchen Objects/Spatula/Prefabs/Spatula_1/Spatula_1_1.obj"/>
+    <mesh name="Spatula_1_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Spatula/Prefabs/Spatula_1/Spatula_1_collision_0.obj"/>
+    <mesh name="Spatula_1_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Spatula/Prefabs/Spatula_1/Spatula_1_collision_1.obj"/>
+    <mesh name="Potato_29" class="default" file="assets/ThorAssets/Kitchen Objects/Potato/Prefabs/Potato_29/Potato_29.obj"/>
+    <mesh name="Potato_29_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Potato/Prefabs/Potato_29/Potato_29_collision_0.obj"/>
+    <mesh name="Tomato_19" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19.obj"/>
+    <mesh name="Tomato_19_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_0.obj"/>
+    <mesh name="Tomato_19_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_1.obj"/>
+    <mesh name="Tomato_19_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_2.obj"/>
+    <mesh name="Tomato_19_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_3.obj"/>
+    <mesh name="Tomato_19_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_4.obj"/>
+    <mesh name="Tomato_19_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_5.obj"/>
+    <mesh name="Tomato_19_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_6.obj"/>
+    <mesh name="Tomato_19_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Tomato/Prefabs/Tomato_19/Tomato_19_collision_7.obj"/>
+
+    <mesh name="RoboTHOR_cup_ai2_v" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_0" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_0.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_1" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_1.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_2" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_2.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_3" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_3.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_4" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_4.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_5" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_5.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_6" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_6.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_7" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_7.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_8" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_8.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_9" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_9.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_10" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_10.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_11" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_11.obj"/>
+    <mesh name="RoboTHOR_cup_ai2_v_collision_12" class="default" file="assets/ThorAssets/RoboTHOR Objects/Cup/Prefabs/RoboTHOR_cup_ai2_v/RoboTHOR_cup_ai2_v_collision_12.obj"/>
+
+    <mesh name="Dish_Sponge_1" class="default" file="assets/ThorAssets/Kitchen Objects/DishSponge/Prefabs/Dish_Sponge_1/Dish_Sponge_1.obj"/>
+    <mesh name="Dish_Sponge_1_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/DishSponge/Prefabs/Dish_Sponge_1/Dish_Sponge_1_collision_0.obj"/>
+
+    <mesh name="Pepper_Shaker_2_0" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_0.obj"/>
+    <mesh name="Pepper_Shaker_2_1" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_1.obj"/>
+    <mesh name="Pepper_Shaker_2_2" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_2.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_0" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_0.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_1" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_1.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_2" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_2.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_3" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_3.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_4" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_4.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_5" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_5.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_6" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_6.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_7" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_7.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_8" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_8.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_9" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_9.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_10" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_10.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_11" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_11.obj"/>
+    <mesh name="Pepper_Shaker_2_collision_12" class="default" file="assets/ThorAssets/Kitchen Objects/Pepper_Shaker/Prefabs/Pepper_Shaker_2/Pepper_Shaker_2_collision_12.obj"/>
+
+
+
 
   </asset>
 
@@ -339,6 +392,77 @@
       <geom name="SprayBottle|surface|2|2__6" class="dynamic" type="mesh" rgba="0.13025478445520078 0.81603041161827516 0.36005691091016623 1" mesh="Spray_Bottle_8_collision_5"/>
     </body>
 
+    <body name="Spatula|surface|2|6" pos="2.50 0.5 0.95099121332168557" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Spatula|surface|2|6" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Spatula|surface|2|6__0" class="visual" type="mesh" material="HammeredMetal_AlbedoTransparency" mesh="Spatula_1_0"/>
+      <geom name="Spatula|surface|2|6__1" class="visual" type="mesh" material="Material.003" mesh="Spatula_1_1"/>
+      <geom name="Spatula|surface|2|6__2" class="dynamic" type="mesh" rgba="0.67101901648989093 0.94724230648450136 0.93194611815004458 1" mesh="Spatula_1_collision_0"/>
+      <geom name="Spatula|surface|2|6__3" class="dynamic" type="mesh" rgba="0.5887995059040021 0.72670003406154227 0.74815375251823568 1" mesh="Spatula_1_collision_1"/>
+    </body>
+    <body name="Potato|surface|2|9" pos="2.850 0.75 0.9986758232116697" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Potato|surface|2|9" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Potato|surface|2|9__0" class="visual" type="mesh" material="Potato3_Mat4" mesh="Potato_29"/>
+      <geom name="Potato|surface|2|9__1" class="dynamic" type="mesh" rgba="0.61314683190529584 0.35906131297695454 0.96594360735515916 1" mesh="Potato_29_collision_0"/>
+    </body>
+    <body name="Tomato|surface|2|14" pos="2.60 0.55 0.99217438697814919" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Tomato|surface|2|14" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Tomato|surface|2|14__0" class="visual" type="mesh" material="Tomato2_Mat3" mesh="Tomato_19"/>
+      <geom name="Tomato|surface|2|14__1" class="dynamic" type="mesh" rgba="0.31099793727946057 0.99869866241869087 0.5867906937459223 1" mesh="Tomato_19_collision_0"/>
+      <geom name="Tomato|surface|2|14__2" class="dynamic" type="mesh" rgba="0.68699952728036473 0.23479057234913925 0.41357876808092353 1" mesh="Tomato_19_collision_1"/>
+      <geom name="Tomato|surface|2|14__3" class="dynamic" type="mesh" rgba="0.48030346508744259 0.81477686543264016 0.15710695330245306 1" mesh="Tomato_19_collision_2"/>
+      <geom name="Tomato|surface|2|14__4" class="dynamic" type="mesh" rgba="0.71015869305376933 0.68661929592167026 0.72932440706514701 1" mesh="Tomato_19_collision_3"/>
+      <geom name="Tomato|surface|2|14__5" class="dynamic" type="mesh" rgba="0.34397954019750154 0.46692699122924619 0.42895785150662713 1" mesh="Tomato_19_collision_4"/>
+      <geom name="Tomato|surface|2|14__6" class="dynamic" type="mesh" rgba="0.76526209643852294 0.16950746847331355 0.010285188939370471 1" mesh="Tomato_19_collision_5"/>
+      <geom name="Tomato|surface|2|14__7" class="dynamic" type="mesh" rgba="0.36735994248993509 0.037760689099102129 0.41359947458496937 1" mesh="Tomato_19_collision_6"/>
+      <geom name="Tomato|surface|2|14__8" class="dynamic" type="mesh" rgba="0.38238139666944448 0.8529394769053783 0.054653089287542755 1" mesh="Tomato_19_collision_7"/>
+    </body>
+    <body name="Cup|surface|2|15" pos="2.70 1.05 1.02129590511322" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="Cup|surface|2|15" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+
+      <geom name="Cup|surface|2|15__0" class="visual" type="mesh" material="RoboTHOR_Cup_Primary_AI2_Mat" mesh="RoboTHOR_cup_ai2_v"/>
+      <geom name="Cup|surface|2|15__1" class="dynamic" type="mesh" rgba="0.042543761964414673 0.56815027718503353 0.41109990708448774 1" mesh="RoboTHOR_cup_ai2_v_collision_0"/>
+      <geom name="Cup|surface|2|15__2" class="dynamic" type="mesh" rgba="0.35202155922088163 0.75049788182659871 0.18420769609666177 1" mesh="RoboTHOR_cup_ai2_v_collision_1"/>
+      <geom name="Cup|surface|2|15__3" class="dynamic" type="mesh" rgba="0.48797045177686071 0.057948387190959405 0.69250261605686914 1" mesh="RoboTHOR_cup_ai2_v_collision_2"/>
+      <geom name="Cup|surface|2|15__4" class="dynamic" type="mesh" rgba="0.66559157800733648 0.55306366884988634 0.0069587407185232042 1" mesh="RoboTHOR_cup_ai2_v_collision_3"/>
+      <geom name="Cup|surface|2|15__5" class="dynamic" type="mesh" rgba="0.63876737964948915 0.45291484749383637 0.39841074655330622 1" mesh="RoboTHOR_cup_ai2_v_collision_4"/>
+      <geom name="Cup|surface|2|15__6" class="dynamic" type="mesh" rgba="0.62659817137777907 0.82633344376889739 0.71851231288694195 1" mesh="RoboTHOR_cup_ai2_v_collision_5"/>
+      <geom name="Cup|surface|2|15__7" class="dynamic" type="mesh" rgba="0.81062398213630649 0.27935741833606553 0.2072753426650088 1" mesh="RoboTHOR_cup_ai2_v_collision_6"/>
+      <geom name="Cup|surface|2|15__8" class="dynamic" type="mesh" rgba="0.69312109098386743 0.01000059395591979 0.65499593507316833 1" mesh="RoboTHOR_cup_ai2_v_collision_7"/>
+      <geom name="Cup|surface|2|15__9" class="dynamic" type="mesh" rgba="0.87286052307946549 0.64969014352123799 0.41510732378018522 1" mesh="RoboTHOR_cup_ai2_v_collision_8"/>
+      <geom name="Cup|surface|2|15__10" class="dynamic" type="mesh" rgba="0.26240324064479281 0.97085455525794451 0.83252529568805378 1" mesh="RoboTHOR_cup_ai2_v_collision_9"/>
+      <geom name="Cup|surface|2|15__11" class="dynamic" type="mesh" rgba="0.053475925762371479 0.082714546814947054 0.96788186488091221 1" mesh="RoboTHOR_cup_ai2_v_collision_10"/>
+      <geom name="Cup|surface|2|15__12" class="dynamic" type="mesh" rgba="0.32903500791320228 0.36058679888199341 0.74754561272403874 1" mesh="RoboTHOR_cup_ai2_v_collision_11"/>
+      <geom name="Cup|surface|2|15__13" class="dynamic" type="mesh" rgba="0.92927122886210256 0.71851170193150737 0.012070865822876753 1" mesh="RoboTHOR_cup_ai2_v_collision_12"/>
+    </body>
+
+    <body name="DishSponge|surface|2|19" pos="1.1395729064941388 0.5204641342163068 0.95620280504226662" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="DishSponge|surface|2|19" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+      <geom name="DishSponge|surface|2|19__0" class="visual" type="mesh" material="SpongeGreenYellow" mesh="Dish_Sponge_1"/>
+      <geom name="DishSponge|surface|2|19__1" class="dynamic" type="mesh" rgba="0.70672043769633031 0.42090086659132675 0.095149139203413946 1" mesh="Dish_Sponge_1_collision_0"/>
+    </body>
+
+    <body name="PepperShaker|surface|2|22" pos="2.594865417480467 1.561687469482404 1.0418900251388548" quat="0.70710678118654768 0.70710678118654746 4.3297802811774664e-17 4.329780281177467e-17">
+      <joint name="PepperShaker|surface|2|22" type="free" stiffness="0" damping="0.1" frictionloss="0" armature="0"/>
+      <geom name="PepperShaker|surface|2|22__0" class="visual" type="mesh" material="PepperNoise" mesh="Pepper_Shaker_2_0"/>
+      <geom name="PepperShaker|surface|2|22__1" class="visual" type="mesh" material="Copper_AlbedoTransparency" mesh="Pepper_Shaker_2_1"/>
+      <geom name="PepperShaker|surface|2|22__2" class="visual" type="mesh" material="Glass_Detailed_White_Mat" mesh="Pepper_Shaker_2_2"/>
+      <geom name="PepperShaker|surface|2|22__3" class="dynamic" type="mesh" rgba="0.44551615785766907 0.12021102991511246 0.060753029502396028 1" mesh="Pepper_Shaker_2_collision_0"/>
+      <geom name="PepperShaker|surface|2|22__4" class="dynamic" type="mesh" rgba="0.9152170694422026 0.99004892811048828 0.32857366899183404 1" mesh="Pepper_Shaker_2_collision_1"/>
+      <geom name="PepperShaker|surface|2|22__5" class="dynamic" type="mesh" rgba="0.81509368496931101 0.91405006207521688 0.099357186707249912 1" mesh="Pepper_Shaker_2_collision_2"/>
+      <geom name="PepperShaker|surface|2|22__6" class="dynamic" type="mesh" rgba="0.10380881824405885 0.75046761963779607 0.56093788902975694 1" mesh="Pepper_Shaker_2_collision_3"/>
+      <geom name="PepperShaker|surface|2|22__7" class="dynamic" type="mesh" rgba="0.37693261341778506 0.048590830614482883 0.82139355930738522 1" mesh="Pepper_Shaker_2_collision_4"/>
+      <geom name="PepperShaker|surface|2|22__8" class="dynamic" type="mesh" rgba="0.99875407627732171 0.12397787184123266 0.77325681506746546 1" mesh="Pepper_Shaker_2_collision_5"/>
+      <geom name="PepperShaker|surface|2|22__9" class="dynamic" type="mesh" rgba="0.19448174458912859 0.42770457051973432 0.94688242901606412 1" mesh="Pepper_Shaker_2_collision_6"/>
+      <geom name="PepperShaker|surface|2|22__10" class="dynamic" type="mesh" rgba="0.1076524107668928 0.44065180580263519 0.41817065506901652 1" mesh="Pepper_Shaker_2_collision_7"/>
+      <geom name="PepperShaker|surface|2|22__11" class="dynamic" type="mesh" rgba="0.13698619269025036 0.72743451454280839 0.14533274595140722 1" mesh="Pepper_Shaker_2_collision_8"/>
+      <geom name="PepperShaker|surface|2|22__12" class="dynamic" type="mesh" rgba="0.26924365164816211 0.31607296041740884 0.031176332288305186 1" mesh="Pepper_Shaker_2_collision_9"/>
+      <geom name="PepperShaker|surface|2|22__13" class="dynamic" type="mesh" rgba="0.39940605182424271 0.41054486538417145 0.44848283810972622 1" mesh="Pepper_Shaker_2_collision_10"/>
+      <geom name="PepperShaker|surface|2|22__14" class="dynamic" type="mesh" rgba="0.67370657203734818 0.92472926636667341 0.27863448756138476 1" mesh="Pepper_Shaker_2_collision_11"/>
+      <geom name="PepperShaker|surface|2|22__15" class="dynamic" type="mesh" rgba="0.34402683286933655 0.3604217710627925 0.92700538655451803 1" mesh="Pepper_Shaker_2_collision_12"/>
+    </body>
 
 
 
